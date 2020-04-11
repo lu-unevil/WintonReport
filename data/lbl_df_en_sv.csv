@@ -1,4 +1,4 @@
-﻿var,code,label_en,label_se
+var,code,label_en,label_se
 EndDate,,,
 DemGen,1,Female,Kvinna
 DemGen,2,Male,Man
@@ -41,13 +41,13 @@ Trustingroups_13,1,Cannot be trusted at all,Går inte alls att lita på
 Trustingroups_13,5,Can be trusted a lot,Går helt och hållet att lita på
 COVIDexp,9,Unsure,Osäker
 COVIDexp,8,No,Nej
-COVIDexp,3,I think I might have had it but am recovered,Jag tror jag kan ha haft COVID-19, men jag har inte blivit testad, och har tillfrisknat
-COVIDexp,2,I think I might have it now but not tested,Jag tror att jag kan ha COVID-19 just nu, men jag har inte blivit testad
-COVIDexp,1,Doctor suspected but tested negative,En läkare sa att jag var en misstänkt COVID-19 patient, men jag testades negativ
-COVIDexp,4,Doctor suspected but no test yet, En läkare sa att jag var en misstänkt COVID-19 patient, men jag har ännu in inte något besked från ett test
-COVIDexp,5,Doctor confirmed and am still infected,En läkare har bekräftat att jag har COVID-19, och jag är fortfarande infekterad
-COVIDexp,6,Doctor confirmed but now test negative, En läkare har bekräftat att jag har haft COVID-19, men jag har tillfrisknat och har nu testats negativ
-COVIDexp,7,Doctor confirmed but not been tested again, En läkare har bekräftat att jag har haft COVID-19, men jag har tillfrisknat och har inte testats igen
+COVIDexp,3,I think I might have had it but am recovered,"Jag tror jag kan ha haft COVID-19,  men jag har inte blivit testad,  och har tillfrisknat"
+COVIDexp,2,I think I might have it now but not tested,"Jag tror att jag kan ha COVID-19 just nu, men jag har inte blivit testad"
+COVIDexp,1,Doctor suspected but tested negative,"En läkare sa att jag var en misstänkt COVID-19 patient,  men jag testades negativ"
+COVIDexp,4,Doctor suspected but no test yet," En läkare sa att jag var en misstänkt COVID-19 patient,  men jag har ännu in inte något besked från ett test"
+COVIDexp,5,Doctor confirmed and am still infected,"En läkare har bekräftat att jag har COVID-19,  och jag är fortfarande infekterad"
+COVIDexp,6,Doctor confirmed but now test negative," En läkare har bekräftat att jag har haft COVID-19,  men jag har tillfrisknat och har nu testats negativ"
+COVIDexp,7,Doctor confirmed but not been tested again," En läkare har bekräftat att jag har haft COVID-19,  men jag har tillfrisknat och har inte testats igen"
 COVIDeffect_1,1,not at all affected,inte alls påverkad 
 COVIDeffect_1,7,very much affected,mycket påverkad 
 COVIDeffect_2,1,not at all affected,inte alls påverkad 
