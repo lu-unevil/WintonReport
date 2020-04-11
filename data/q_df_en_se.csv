@@ -1,54 +1,54 @@
-row_id,var_group,var,txt_en,txt_se
-0,CanadaQ,,How much do you agree or disagree with the following statements?,Hur mycket håller du med eller håller med om följande uttalanden?
+﻿row_id,var_group,var,txt_en,txt_se
+0,CanadaQ,,How much do you agree or disagree with the following statements?,I hur stor grad håller du med följande påståenden?
 1,CanadaQ,CanadaQ_1,,
-2,CanadaQ,CanadaQ_1,Getting sick with the coronavirus/COVID-19 can be serious.,Att bli sjuk av koronaviruset / COVID-19 kan vara allvarligt.
+2,CanadaQ,CanadaQ_1,Getting sick with the coronavirus/COVID-19 can be serious.,Att bli sjuk av coronaviruset/COVID-19 kan vara allvarligt.
 1,CanadaQ,CanadaQ_2,,
-2,CanadaQ,CanadaQ_2,I will probably get sick with the coronavirus/COVID-19.,Jag kommer förmodligen att bli sjuk av coronavirus / COVID-19.
+2,CanadaQ,CanadaQ_2,I will probably get sick with the coronavirus/COVID-19.,Jag kommer troligtvis bli sjuk med coronaviruset/COVID-19.
 1,CanadaQ,CanadaQ_3,,
-2,CanadaQ,CanadaQ_3,The coronavirus/COVID-19 will NOT affect very many people in the country I'm currently living in.,Coronavirus / COVID-19 påverkar INTE så många människor i det land jag för närvarande bor i.
-0,COVIDeffect,,To what extent have you been affected by the coronavirus/COVID-19 in the following ways?,I vilken utsträckning har du påverkats av coronavirus / COVID-19 på följande sätt?
+2,CanadaQ,CanadaQ_3,The coronavirus/COVID-19 will NOT affect very many people in the country I'm currently living in.,Coronaviruset/COVID-19 kommer INTE att påverka särskilt många personer i landet jag bor i.
+0,COVIDeffect,,To what extent have you been affected by the coronavirus/COVID-19 in the following ways?,I hur stor grad har du på följande sätt påverkats av coronavirus/COVID-19?
 1,COVIDeffect,COVIDeffect_1,,
-2,COVIDeffect,COVIDeffect_1,I have experienced financial difficulties as a result of the pandemic,Jag har upplevt ekonomiska svårigheter till följd av pandemin
+2,COVIDeffect,COVIDeffect_1,I have experienced financial difficulties as a result of the pandemic,Jag har upplevt ekonomiska svårigheter som ett resultat av pandemin 
 1,COVIDeffect,COVIDeffect_2,,
-2,COVIDeffect,COVIDeffect_2,I have experienced social difficulties as a result of the pandemic,Jag har upplevt sociala svårigheter till följd av pandemin
+2,COVIDeffect,COVIDeffect_2,I have experienced social difficulties as a result of the pandemic,Jag har upplevt sociala svårigheter  som ett resultat av pandemin
 1,COVIDeffect,COVIDeffect_3,,
-2,COVIDeffect,COVIDeffect_3,I have experienced mental health difficulties as a result of the pandemic (e.g. increased anxiety),Jag har upplevt psykiska hälsoproblem som ett resultat av pandemin (t.ex. ökad ångest)
+2,COVIDeffect,COVIDeffect_3,I have experienced mental health difficulties as a result of the pandemic (e.g. increased anxiety),Jag har upplevt svårigheter i min mentala hälsa som ett resultat av pandemin (t.ex. ökad ångest)
 1,COVIDeffect,COVIDeffect_4,,
-2,COVIDeffect,COVIDeffect_4,I have friends/family who have tested positive or died from the virus,Jag har vänner / familj som har testat positivt eller dog av viruset
-1,COVIDexp,COVIDexp,"Have you ever had, or thought you might have, the coronavirus/COVID-19?","Har du någonsin haft, eller trodde, att du kan ha, coronavirus / COVID-19?"
+2,COVIDeffect,COVIDeffect_4,I have friends/family who have tested positive or died from the virus,Jag har vänner/familj som har testats positiva eller som har dött av viruset
+1,COVIDexp,COVIDexp,"Have you ever had, or thought you might have, the coronavirus/COVID-19?","Har du någonsin haft, eller tror dig ha haft, coronaviruset/COVID-19?"
 2,COVIDexp,COVIDexp,,
-0,CultCog,,People often disagree about how far to let individuals go in making decisions for themselves. How strongly do you agree or disagree with each of these statements?,Människor håller ofta med om hur långt de ska låta individer gå när de fattar beslut för sig själva. Hur starkt håller du med eller håller med om vart och ett av dessa uttalanden?
+0,CultCog,,People often disagree about how far to let individuals go in making decisions for themselves. How strongly do you agree or disagree with each of these statements?,Personer är ofta oense om i hur stor omfattning man ska låta individer fatta egna beslut. I hur stor grad håller du med vart och ett av följande påståenden?
 1,CultCog,CultCog_1,,
-2,CultCog,CultCog_1,The government interferes far too much in our everyday lives.,Staten stör alltför mycket i vår vardag.
+2,CultCog,CultCog_1,The government interferes far too much in our everyday lives.,Staten blandar sig i våra vardagliga liv för mycket.
 1,CultCog,CultCog_2,,
-2,CultCog,CultCog_2,Sometimes government needs to make laws that keep people from hurting themselves.,Ibland måste regeringen göra lagar som hindrar människor från att skada sig själva.
+2,CultCog,CultCog_2,Sometimes government needs to make laws that keep people from hurting themselves.,Ibland behöver staten skapa lagar som förhindrar att personer skadar sig själva.
 1,CultCog,CultCog_3,,
-2,CultCog,CultCog_3,It's not the government's business to try to protect people from themselves.,Det är inte regeringens verksamhet att försöka skydda människor från sig själva.
+2,CultCog,CultCog_3,It's not the government's business to try to protect people from themselves.,Det är inte statens uppgift att försöka skydda personer från sig själva.
 1,CultCog,CultCog_4,,
-2,CultCog,CultCog_4,The government should stop telling people how to live their lives.,Regeringen bör sluta berätta för människor hur de ska leva sina liv.
+2,CultCog,CultCog_4,The government should stop telling people how to live their lives.,Staten borde upphöra att berätta för personer hur de ska leva sina liv.
 1,CultCog,CultCog_5,,
-2,CultCog,CultCog_5,"The government should do more to advance society's goals, even if that means limiting the freedom and choices of individuals.","Regeringen bör göra mer för att främja samhällets mål, även om det innebär att begränsa individernas frihet och val."
+2,CultCog,CultCog_5,"The government should do more to advance society's goals, even if that means limiting the freedom and choices of individuals.","Staten borde göra mer för att uppnå samhällsmål, även om det innebär en begränsning av frihet och individers val."
 1,CultCog,CultCog_6,,
-2,CultCog,CultCog_6,Government should put limits on the choices individuals can make so they don't get in the way of what's good for society.,Regeringen bör sätta gränser för de val som individer kan göra så att de inte kommer i vägen för vad som är bra för samhället.
+2,CultCog,CultCog_6,Government should put limits on the choices individuals can make so they don't get in the way of what's good for society.,Staten borde sätta begränsningar på de val som individer kan göra så att dessa val inte är i vägen för det som är bra för samhället.
 1,DemAge,DemAge,What is your age?,Hur gammal är du?
 2,DemAge,DemAge,,
-1,DemEdu,DemEdu,Please indicate your highest educational qualification:,Ange din högsta utbildningskvalifikation:
+1,DemEdu,DemEdu,Please indicate your highest educational qualification:,Vänligen ange din högsta utbildningsnivå:
 2,DemEdu,DemEdu,,
-1,DemGen,DemGen,What is your gender?,
+1,DemGen,DemGen,What is your gender?,Vilket kön tillhör du?
 2,DemGen,DemGen,,
-1,DemHealthcare,DemHealthcare,"Are you a healthcare provider (e.g. doctor, nurse, paramedic, pharmacist, carer)?","Är du vårdgivare (t.ex. läkare, sjuksköterska, sjukvårdare, farmaceut, vårdgivare)?"
+1,DemHealthcare,DemHealthcare,"Are you a healthcare provider (e.g. doctor, nurse, paramedic, pharmacist, carer)?","Arbetar du inom sjukvården (t.ex. läkare, sjuksköterska, ambulansvårdare, apotekare, vårdare)?"
 2,DemHealthcare,DemHealthcare,,
 1,EndDate,EndDate,End Date (GMT),Slutdatum (GMT)
 2,EndDate,EndDate,,
-1,Ethnic min,Ethnic min,Do you consider yourself to be part of a minority group within the country you are currently living in?,Anser du dig själv vara en del av en minoritetsgrupp i det land du för närvarande bor i?
+1,Ethnic min,Ethnic min,Do you consider yourself to be part of a minority group within the country you are currently living in?,Skulle du se dig själv som tillhörande en minoritetsgrupp i det land du bor i?
 2,Ethnic min,Ethnic min,,
-0,FinitePool,,How worried are you personally about the following issues at present?,Hur orolig är du personligen för följande problem för närvarande?
+0,FinitePool,,How worried are you personally about the following issues at present?,Hur orolig är du personligen gällande följande frågor just nu?
 1,FinitePool,FinitePool_1,,
 2,FinitePool,FinitePool_1,Climate change,Klimatförändring
 1,FinitePool,FinitePool_2,,
-2,FinitePool,FinitePool_2,Coronavirus/COVID-19,Koronavirus / COVID-19
+2,FinitePool,FinitePool_2,Coronavirus/COVID-19,Coronaviruset/COVID-19
 1,FinitePool,FinitePool_3,,
-2,FinitePool,FinitePool_3,Political disagreement,Politisk oenighet
+2,FinitePool,FinitePool_3,Political disagreement,Politiska oenigheter
 1,FinitePool,FinitePool_4,,
 2,FinitePool,FinitePool_4,Immigration,Invandring
 1,FinitePool,FinitePool_5,,
@@ -56,10 +56,10 @@ row_id,var_group,var,txt_en,txt_se
 1,FinitePool,FinitePool_6,,
 2,FinitePool,FinitePool_6,Terrorism,Terrorism
 1,FinitePool,FinitePool_7,,
-2,FinitePool,FinitePool_7,Air pollution,Luftförorening
+2,FinitePool,FinitePool_7,Air pollution,Luftföroreningar
 1,FinitePool,FinitePool_8,,
 2,FinitePool,FinitePool_8,Crime,Brottslighet
-0,Friends,,How likely do you think it is that your friends and family in the country you are currently living in will be directly affected by the following in the next 6 months? ,Hur troligt tror du att det är att dina vänner och familj i det land du för närvarande bor i kommer att påverkas direkt av följande under de kommande 6 månaderna?
+0,Friends,,How likely do you think it is that your friends and family in the country you are currently living in will be directly affected by the following in the next 6 months? ,Hur troligt är det att dina vänner och familj i landet du bor i kommer att bli direkt och personligen påverkade av följande under de kommande 6 månaderna?
 1,Friends,Friends_1,,
 2,Friends,Friends_1,Crime,Brottslighet
 1,Friends,Friends_2,,
@@ -67,111 +67,111 @@ row_id,var_group,var,txt_en,txt_se
 1,Friends,Friends_3,,
 2,Friends,Friends_3,Discrimination,Diskriminering
 1,Friends,Friends_4,,
-2,Friends,Friends_4,Indecent or antisocial behaviour by others,Oberoende eller antisocialt beteende av andra
+2,Friends,Friends_4,Indecent or antisocial behaviour by others,Olämpligt eller osocialt beteende av andra
 1,Friends,Friends_5,,
-2,Friends,Friends_5,Injustice,Orätt
+2,Friends,Friends_5,Injustice,Orättvisa
 1,Friends,Friends_6,,
 2,Friends,Friends_6,Corruption or fraud,Korruption eller bedrägeri
 1,Friends,Friends_7,,
 2,Friends,Friends_7,Immigration,Invandring
 1,Friends,Friends_8,,
-2,Friends,Friends_8,Catching the coronavirus/COVID-19,Fånga coronavirus / COVID-19
-1,GenSocTrust,GenSocTrust,"Generally speaking, would you say most people can be trusted or that you can't be too careful in dealing with people?","Generellt sett, skulle du säga att de flesta kan lita på eller att du inte kan vara för försiktig med att hantera människor?"
+2,Friends,Friends_8,Catching the coronavirus/COVID-19,Bli smittad med coronaviruset/COVID-19
+1,GenSocTrust,GenSocTrust,"Generally speaking, would you say most people can be trusted or that you can't be too careful in dealing with people?","Generellt sett, skulle du påstå att de flesta människor är pålitliga eller är det så att du inte kan vara nog försiktig när du har med människor att göra?"
 2,GenSocTrust,GenSocTrust,,
-0,Govresponse,,Please rate your answers to the following questions. Each rating should be in relation to the response in the country you are living in: ,Vänligen betygsätt dina svar på följande frågor. Varje betyg bör vara i relation till svaret i det land du bor i:
+0,Govresponse,,Please rate your answers to the following questions. Each rating should be in relation to the response in the country you are living in: ,Vänligen gradera dina svar på följande frågor. Varje bedömning ska vara i relation till hur det är i landet du bor i:
 1,Govresponse,Govresponse_1,,
-2,Govresponse,Govresponse_1,How much do you feel you understand the government's strategy to deal with the coronavirus/COVID-19 pandemic?,Hur mycket känner du att du förstår regeringens strategi för att hantera coronavirus / COVID-19-pandemin?
+2,Govresponse,Govresponse_1,How much do you feel you understand the government's strategy to deal with the coronavirus/COVID-19 pandemic?,Hur mycket känner du att du förstår regeringens strategi att hantera coronaviruset/COVID-19-pandemin?
 1,Govresponse,Govresponse_2,,
-2,Govresponse,Govresponse_2,How much do you trust the country’s politicians to deal effectively with the pandemic?,Hur mycket litar du på landets politiker för att hantera pandemin effektivt?
+2,Govresponse,Govresponse_2,How much do you trust the country’s politicians to deal effectively with the pandemic?,Hur mycket litar du på förmågan hos landets politiker att effektivt hantera pandemin?
 1,Govresponse,Govresponse_3,,
-2,Govresponse,Govresponse_3,How much do you trust the country’s national scientific and medical advisors to know the best measures to take in the face of the pandemic?,Hur mycket litar du på landets nationella vetenskapliga och medicinska rådgivare för att veta de bästa åtgärderna att vidta inför pandemin?
+2,Govresponse,Govresponse_3,How much do you trust the country’s national scientific and medical advisors to know the best measures to take in the face of the pandemic?,Hur mycket litar du på att landets nationella vetenskapliga och medicinska rådgivare har kännedom om de bästa åtgärderna för att möta pandemin?
 1,Govresponse,Govresponse_4,,
-2,Govresponse,Govresponse_4,How much do you trust experts who are not connected with the government who are commenting on measures planned for the pandemic?,Hur mycket litar du på experter som inte är kopplade till regeringen som kommenterar åtgärder planerade för pandemin?
+2,Govresponse,Govresponse_4,How much do you trust experts who are not connected with the government who are commenting on measures planned for the pandemic?,Hur mycket litar du på experter som inte har koppling till regeringen och som kommenterar planerade åtgärder för att hantera pandemin?
 1,Govresponse,Govresponse_5,,
-2,Govresponse,Govresponse_5,How much do you trust the World Health Organisation to know the best measures to take in the face of the pandemic?,Hur mycket litar du på att Världshälsoorganisationen känner till de bästa åtgärderna att vidta inför pandemin?
+2,Govresponse,Govresponse_5,How much do you trust the World Health Organisation to know the best measures to take in the face of the pandemic?,Hur mycket litar du på att Världshälsoorganisationen (WHO) har kännedom om de bästa åtgärderna för att möta pandemin?
 1,Govresponse,Govresponse_6,,
-2,Govresponse,Govresponse_6,"How effective do you think the official response has been up until now in the country you are living in, in dealing with the pandemic?",Hur effektiv tror du att det officiella svaret hittills varit i det land du bor i när du hanterar pandemin?
+2,Govresponse,Govresponse_6,"How effective do you think the official response has been up until now in the country you are living in, in dealing with the pandemic?",Hur effektiv tror du att den offentliga hanteringen har varit fram tills nu i landet du bor i, för att möta pandemin?
 1,Govresponse,Govresponse_7,,
-2,Govresponse,Govresponse_7,To what extent do you feel that the personal actions you are taking to try to limit the spread of coronavirus make a difference?,I vilken utsträckning tycker du att de personliga handlingarna du vidtar för att försöka begränsa spridningen av coronavirus gör skillnad?
+2,Govresponse,Govresponse_7,To what extent do you feel that the personal actions you are taking to try to limit the spread of coronavirus make a difference?,I hur stor grad känner du att de personliga åtgärder du gör för att begränsa spridning av coronaviruset spelar någon roll?
 1,Govresponse,Govresponse_8,,
-2,Govresponse,Govresponse_8,To what extent do you feel the actions that your country is taking to limit the spread of coronavirus make a difference?,I vilken utsträckning känner du att de åtgärder som ditt land vidtar för att begränsa spridningen av coronavirus gör skillnad?
+2,Govresponse,Govresponse_8,To what extent do you feel the actions that your country is taking to limit the spread of coronavirus make a difference?,I hur stor grad känner du att de åtgärder ditt land tar för att begränsa spridning av coronaviruset spelar någon roll?
 1,Govresponse,Govresponse_9,,
-2,Govresponse,Govresponse_9,How much do you feel you have enough information from the government to take the necessary actions to minimise your risk from coronavirus?,Hur mycket tycker du att du har tillräckligt med information från regeringen för att vidta nödvändiga åtgärder för att minimera din risk för coronavirus?
-0,Govrestrict,,What do you think of the planned response from the government in the country you are living in?,Vad tycker du om det planerade svaret från regeringen i det land du bor i?
+2,Govresponse,Govresponse_9,How much do you feel you have enough information from the government to take the necessary actions to minimise your risk from coronavirus?,Hur mycket känner du att du har tillräcklig information från regeringen för att ta nödvändiga åtgärder för att minimera din risk för coronaviruset?
+0,Govrestrict,,What do you think of the planned response from the government in the country you are living in?,Vad tycker du om åtgärder planerade av regeringen i det land du bor?
 1,Govrestrict,Govrestrict_1,,
-2,Govrestrict,Govrestrict_1,I think the response in the past few weeks was...,Jag tror att svaret under de senaste veckorna var ...
+2,Govrestrict,Govrestrict_1,I think the response in the past few weeks was...,Jag tycker att åtgärderna de senaste veckorna har varit... 
 1,Govrestrict,Govrestrict_2,,
-2,Govrestrict,Govrestrict_2,I think the planned response in the next few weeks is...,Jag tror att det planerade svaret under de kommande veckorna är ...
+2,Govrestrict,Govrestrict_2,I think the planned response in the next few weeks is...,Jag tycker att åtgärder planerade under de kommande veckorna är... 
 1,Govrestrict,Govrestrict_3,,
-2,Govrestrict,Govrestrict_3,I think the planned response for the next few months is...,Jag tror att det planerade svaret för de kommande månaderna är ...
-0,MediaTrust,,"Thinking about the coronavirus/COVID-19 information that you received from each of the following sources, how much did you trust the information?","Tänker du på informationen om coronavirus / COVID-19 som du fick från var och en av följande källor, hur litade du på informationen?"
+2,Govrestrict,Govrestrict_3,I think the planned response for the next few months is...,Jag tycker att åtgärder planerade för de kommande månaderna är... 
+0,MediaTrust,,"Thinking about the coronavirus/COVID-19 information that you received from each of the following sources, how much did you trust the information?","Tänk på den information om coronaviruset/COVID-19 som du har fått från var och en av följande källor, i hur stor grad litade du på informationen?"
 1,MediaTrust,FriendstrustQ1,,
 2,MediaTrust,FriendstrustQ1,...friends and family…,...vänner och familj…
 1,MediaTrust,govtrustQ1,,
-2,MediaTrust,govtrustQ1,government or official sources in the country you are living in,regeringar eller officiella källor i det land du bor i
+2,MediaTrust,govtrustQ1,government or official sources in the country you are living in,staten eller officiella källor i landet du bor i
 1,MediaTrust,journalisttrustQ1,,
-2,MediaTrust,journalisttrustQ1,journalists and commentators in the media,journalister och kommentatorer i media
+2,MediaTrust,journalisttrustQ1,journalists and commentators in the media,journalister och mediarapportörer
 1,MediaTrust,PosterstrustQ1,,
-2,MediaTrust,PosterstrustQ1,official public posters,officiella offentliga affischer
+2,MediaTrust,PosterstrustQ1,official public posters,officiella affischer för allmänheten
 1,MediaTrust,SocialmediatrustQ1,,
-2,MediaTrust,SocialmediatrustQ1,social media,sociala media
+2,MediaTrust,SocialmediatrustQ1,social media,sociala medier
 1,MediaTrust,WHOtrustQ1,,
-2,MediaTrust,WHOtrustQ1,World Health Organisation,Världshälsoorganisationen
+2,MediaTrust,WHOtrustQ1,World Health Organisation,Världshälsoorganisationen (WHO)
 1,MediaTrust,workplacetrustQ1,,
 2,MediaTrust,workplacetrustQ1,your place of work or education,din arbetsplats eller utbildning
-0,KnowledgeCert,,How certain or uncertain do you think the following are:,Hur säker eller osäker tror du att följande är:
+0,KnowledgeCert,,How certain or uncertain do you think the following are:,Hur säker eller osäker tycker du att följande är:
 1,KnowledgeCert,KnowledgeCert_1,,
-2,KnowledgeCert,KnowledgeCert_1,The current scientific knowledge about the coronavirus/COVID-19?,Den nuvarande vetenskapliga kunskapen om coronavirus / COVID-19?
+2,KnowledgeCert,KnowledgeCert_1,The current scientific knowledge about the coronavirus/COVID-19?,Aktuell vetenskaplig kunskap om coronaviruset/COVID-19?
 1,KnowledgeCert,KnowledgeCert_2,,
-2,KnowledgeCert,KnowledgeCert_2,The estimates of the number of cases of coronavirus/COVID-19 worldwide,Uppskattningarna av antalet fall av coronavirus / COVID-19 över hela världen
-0,Longitude,,"Thinking back, how worried were you about coronavirus/COVID-19... ","Tänker tillbaka, hur orolig var du för coronavirus / COVID-19 ..."
+2,KnowledgeCert,KnowledgeCert_2,The estimates of the number of cases of coronavirus/COVID-19 worldwide,Uppskattningar av antal fall av coronaviruset/COVID-19 i världen 
+0,Longitude,,"Thinking back, how worried were you about coronavirus/COVID-19... ","Tänk tillbaka, hur orolig var du för coronavirus/COVID-19 för..."
 1,Longitude,Longitude_1,,
 2,Longitude,Longitude_1,… 1 week ago?,… 1 vecka sedan?
 1,Longitude,Longitude_2,,
 2,Longitude,Longitude_2,…1 month ago?,…1 månad sedan?
 1,Longitude,Longitude_3,,
 2,Longitude,Longitude_3,…2 months ago?,…2 månader sedan?
-0,MediaExp,,Have you come across information about coronavirus/COVID-19 from:,Har du stött på information om coronavirus / COVID-19 från:
+0,MediaExp,,Have you come across information about coronavirus/COVID-19 from:,Har du tagit del av information om coronaviruset/COVID-19 från:
 1,MediaExp,MediaExp_1,,
 2,MediaExp,MediaExp_1,Official public posters,Officiella offentliga affischer
 1,MediaExp,MediaExp_2,,
-2,MediaExp,MediaExp_2,Social media or online blogs from individuals,Sociala medier eller onlinebloggar från individer
+2,MediaExp,MediaExp_2,Social media or online blogs from individuals,Sociala medier eller individers bloggar på nätet 
 1,MediaExp,MediaExp_3,,
 2,MediaExp,MediaExp_3,"Journalists and commentators in the media (TV, radio, newspapers)","Journalister och kommentatorer i media (TV, radio, tidningar)"
 1,MediaExp,MediaExp_4,,
-2,MediaExp,MediaExp_4,Government or official sources such as websites or public speeches/broadcasts within the country you are living in,Regering eller officiella källor som webbplatser eller offentliga tal / sändningar inom det land du bor i
+2,MediaExp,MediaExp_4,Government or official sources such as websites or public speeches/broadcasts within the country you are living in,Statliga eller officiella källor såsom hemsidor eller offentliga tal/sändningar inom landet du bor i
 1,MediaExp,MediaExp_5,,
 2,MediaExp,MediaExp_5,Official messages from your place of work or education,Officiella meddelanden från din arbetsplats eller utbildning
 1,MediaExp,MediaExp_6,,
 2,MediaExp,MediaExp_6,Friends and family,Vänner och familj
 1,MediaExp,MediaExp_7,,
-2,MediaExp,MediaExp_7,World Health Organisation,Världshälsoorganisationen
+2,MediaExp,MediaExp_7,World Health Organisation,Världshälsoorganisationen (WHO)
 0,Numeracy,,Numeracy questions,Räkenskapsfrågor
 1,Numeracy,Num1,"Out of 1,000 people in a small town 500 are members of a choir.
 Out of these 500 members in the choir 100 are men.
 Out of the 500 inhabitants that are not in the choir 300 are men.
 What is the probability that a randomly drawn man is a member of the choir?
 Please indicate the probability in percent.
-____ %",Av 1000 personer i en liten stad är 500 medlemmar i en kör. Av dessa 500 medlemmar i kören är 100 män. Av de 500 invånarna som inte är i kören är 300 män. Vad är troligt att en slumpmässig man är medlem i kören? Ange sannolikheten i procent. ____%
+____ %",Utav 1 000 personer i en liten stad, är 500 medlemmar i en kör. Utav dessa 500 medlemmar i kören, är 100 män. Utav de 500 invånarna som inte är med i kören, är 300 män. Vad är sannolikheten att en slumpmässigt vald man är medlem i kören? Vänligen ange sannolikheten i procent. ____%
 2,Numeracy,Num1,,
 1,Numeracy,Num2a,"Imagine we are throwing a five-sided die 50 times.
 On average, out of these 50 throws how many times would this five-sided die show an odd number (1, 3 or 5)?
-____ out of 50 throws.","Föreställ dig att vi kastar en femsidig dyn 50 gånger. I genomsnitt, av dessa 50 kast, hur många gånger skulle denna femsidiga matris visa ett udda nummer (1, 3 eller 5)? ____ av 50 kast."
+____ out of 50 throws.","Föreställ dig att vi kastar en femsidig tärning 50 gånger. I hur många av dessa 50 kast, kommer denna femsidiga tärning visa ett udda antal (1, 3 or 5) i genomsnitt? ____ av 50 kast."
 2,Numeracy,Num2a,,
 1,Numeracy,Num2b,"Imagine we are throwing a loaded die (6 sides) 70 times.
 The probability that the die shows a 6 is twice as high as the probability of each of the other numbers.
 On average, out of these 70 throws how many times would the die show the number 6?
-____ out of 70 throws.","Föreställ dig att vi kastar en laddad dyn (6 sidor) 70 gånger. Sannolikheten för att munstycket visar en 6 är dubbelt så hög som sannolikheten för vart och ett av de andra siffrorna. I genomsnitt, av dessa 70 kast, hur många gånger skulle matrisen visa numret 6? ____ av 70 kast."
+____ out of 70 throws.","Föreställ dig att vi kastar en skev tärning (6 sidor) 70 gånger. Sannolikheten att tärningen visar en 6a är dubbelt så stor som sannolikheten för vart och ett av de andra sidorna. I hur många av dessa 70 kast kommer tärningen visa siffran 6 i genomsnitt? ____ av 70 kast."
 2,Numeracy,Num2b,,
 1,Numeracy,Num3,"In a forest 20% of mushrooms are red, 50% brown and 30% white.
 A red mushroom is poisonous with a probability of 20%.
 A mushroom that is not red is poisonous with a probability of 5%.
 What is the probability that a poisonous mushroom in the forest is red?
-____ %","I en skog är 20% svamp röd, 50% brun och 30% vit. En röd svamp är giftig med en sannolikhet på 20%. En svamp som inte är röd är giftig med en sannolikhet på 5%. Vad är troligt att en giftig svamp i skogen är röd? ____%"
+____ %","I en skog är 20% av svamparna röda, 50% bruna och 30% vita. En röd svamp är giftig med sannolikheten 20%. En svamp som inte är röd är giftig med en sannolikhet på 5%. Vad är sannolikheten att en giftig svamp i skogen är röd? ____%"
 2,Numeracy,Num3,,
-1,Numeracy,NumeracyQ1,Which represents the highest risk of something happening?,Vilket representerar den högsta risken för att något händer?
+1,Numeracy,NumeracyQ1,Which represents the highest risk of something happening?,Vilket representerar den högsta risken att något händer? 
 2,Numeracy,NumeracyQ1,,
-0,Personal,,How likely do you think it is that you will be directly and personally affected by the following in the next 6 months?,Hur troligt tror du att det är att du kommer att påverkas direkt och personligen av följande under de kommande 6 månaderna?
+0,Personal,,How likely do you think it is that you will be directly and personally affected by the following in the next 6 months?,Hur troligt är det att du kommer bli direkt och personligen påverkad av följande under de kommande 6 månaderna?
 1,Personal,Personal_1,,
 2,Personal,Personal_1,Crime,Brottslighet
 1,Personal,Personal_2,,
@@ -179,60 +179,60 @@ ____ %","I en skog är 20% svamp röd, 50% brun och 30% vit. En röd svamp är g
 1,Personal,Personal_3,,
 2,Personal,Personal_3,Discrimination,Diskriminering
 1,Personal,Personal_4,,
-2,Personal,Personal_4,Indecent or antisocial behaviour by others,Oberoende eller antisocialt beteende av andra
+2,Personal,Personal_4,Indecent or antisocial behaviour by others,Olämpligt eller osocialt beteende av andra
 1,Personal,Personal_5,,
-2,Personal,Personal_5,Injustice,Orätt
+2,Personal,Personal_5,Injustice,Orättvisa
 1,Personal,Personal_6,,
 2,Personal,Personal_6,Corruption or fraud,Korruption eller bedrägeri
 1,Personal,Personal_7,,
 2,Personal,Personal_7,Immigration,Invandring
 1,Personal,Personal_8,,
-2,Personal,Personal_8,Catching the coronavirus/COVID-19,Fånga coronavirus / COVID-19
-1,Politics,Politics,Where do you feel your political views lie on a spectrum of left wing (or liberal) to right wing (or conservative)?,Var känner du att dina politiska åsikter ligger på ett spektrum av vänster (eller liberal) till höger (eller konservativ)?
+2,Personal,Personal_8,Catching the coronavirus/COVID-19,Bli smittad med coronavirus/COVID-19
+1,Politics,Politics,Where do you feel your political views lie on a spectrum of left wing (or liberal) to right wing (or conservative)?,Var känner du att du ligger politiskt på en skala från vänster (eller liberal) till höger (eller konservativ)?
 2,Politics,Politics,,
-1,prep,prep,"Which of the following steps, if any, have you taken in the last month to prepare for the possibility of many cases of the coronavirus/COVID-19 in your community? Select all that apply.","Vilka av följande steg, om några, har du tagit den senaste månaden för att förbereda dig för möjligheten till många fall av coronavirus / COVID-19 i ditt samhälle? Välj allt som gäller."
+1,prep,prep,"Which of the following steps, if any, have you taken in the last month to prepare for the possibility of many cases of the coronavirus/COVID-19 in your community? Select all that apply.","Vilka av följande steg, om några, har du tagit under den senaste månaden för att förbereda dig för möjligheten av många fall av coronaviruset/COVID-19 i ditt samhälle? Välj alla som stämmer."
 2,prep,prep,,
-1,prosocial,prosocial,To what extent do you think it’s important to do things for the benefit of others and society even if they have some costs to you personally?,I vilken utsträckning tycker du att det är viktigt att göra saker till förmån för andra och samhället även om de har några kostnader för dig personligen?
+1,prosocial,prosocial,To what extent do you think it’s important to do things for the benefit of others and society even if they have some costs to you personally?,I hur stor grad anser du att det är viktigt att göra saker till nytta för andra och samhället även om dessa saker kan innebära en personlig kostnad för dig?
 2,prosocial,prosocial,,
 1,quota_age,quota_age,What is your age?,Hur gammal är du?
 2,quota_age,quota_age,,
-1,Residency,Residency,In which country do you currently live?,I vilket land bor du för närvarande?
+1,Residency,Residency,In which country do you currently live?,Vilket land bor du i för närvarande?
 2,Residency,Residency,,
-1,SARS,SARS,"Have you personally been affected by a previous similar epidemic, such as SARS (Severe Acute Respiratory Syndrome), MERS (Middle East Respiratory Syndrome) or Ebola?","Har du personligen drabbats av en tidigare liknande epidemi som SARS (svårt akut respiratoriskt syndrom), MERS (Mellanösterns respiratoriskt syndrom) eller ebola?"
+1,SARS,SARS,"Have you personally been affected by a previous similar epidemic, such as SARS (Severe Acute Respiratory Syndrome), MERS (Middle East Respiratory Syndrome) or Ebola?","Har du personligen blivit påverkad av liknande epidemier såsom SARS (Severe Acute Respiratory Syndrome), MERS (Middle East Respiratory Syndrome) eller Ebola?"
 2,SARS,SARS,,
-1,Sciunderstand,Sciunderstand,To what extent do you think scientists have a good understanding of the coronavirus/COVID-19?,I vilken utsträckning tror du att forskare har en god förståelse för coronavirus / COVID-19?
+1,Sciunderstand,Sciunderstand,To what extent do you think scientists have a good understanding of the coronavirus/COVID-19?,I hur stor grad tror du att forskare har en god förståelse av coronaviruset/COVID-19?
 2,Sciunderstand,Sciunderstand,,
-1,Soughtinfo,Soughtinfo,Have you sought out information specifically about coronavirus/COVID-19?,Har du sökt information specifikt om coronavirus / COVID-19?
+1,Soughtinfo,Soughtinfo,Have you sought out information specifically about coronavirus/COVID-19?,Har du sökt specifik information om coronaviruset/COVID-19?
 2,Soughtinfo,Soughtinfo,,
 0,Trustingroups,,How much do you trust each of the following?,Hur mycket litar du på vart och ett av följande?
 1,Trustingroups,Trustingroups_1,,
-2,Trustingroups,Trustingroups_1,People in your family,Människor i din familj
+2,Trustingroups,Trustingroups_1,People in your family,Personer i din familj
 1,Trustingroups,Trustingroups_10,,
-2,Trustingroups,Trustingroups_10,Journalists,journalister
+2,Trustingroups,Trustingroups_10,Journalists,Journalister
 1,Trustingroups,Trustingroups_11,,
-2,Trustingroups,Trustingroups_11,The current government of the country you are living in,Den nuvarande regeringen i det land du bor i
+2,Trustingroups,Trustingroups_11,The current government of the country you are living in,Den nuvarande regeringen i landet där du bor 
 1,Trustingroups,Trustingroups_12,,
 2,Trustingroups,Trustingroups_12,Scientific knowledge,Vetenskaplig kunskap
 1,Trustingroups,Trustingroups_13,,
-2,Trustingroups,Trustingroups_13,Civil servants or public officials in the country you are living in,Tjänstemän eller offentliga tjänstemän i det land du bor i
+2,Trustingroups,Trustingroups_13,Civil servants or public officials in the country you are living in,Statstjänstemän och tjänstemän i landet där du bor 
 1,Trustingroups,Trustingroups_2,,
-2,Trustingroups,Trustingroups_2,People in your neighbourhood,Människor i ditt område
+2,Trustingroups,Trustingroups_2,People in your neighbourhood,Personer i ditt grannskap
 1,Trustingroups,Trustingroups_3,,
-2,Trustingroups,Trustingroups_3,People you work or study with,Människor du arbetar eller studerar med
+2,Trustingroups,Trustingroups_3,People you work or study with,Personer du arbetar eller studerar med
 1,Trustingroups,Trustingroups_4,,
-2,Trustingroups,Trustingroups_4,People who speak a different language from you,Människor som talar ett annat språk än dig
+2,Trustingroups,Trustingroups_4,People who speak a different language from you,Personer som talar ett annat språk än vad du gör
 1,Trustingroups,Trustingroups_5,,
-2,Trustingroups,Trustingroups_5,Strangers,Strangers
+2,Trustingroups,Trustingroups_5,Strangers,Främlingar
 1,Trustingroups,Trustingroups_6,,
-2,Trustingroups,Trustingroups_6,Immigrants,invandrare
+2,Trustingroups,Trustingroups_6,Immigrants,Invandrare
 1,Trustingroups,Trustingroups_7,,
 2,Trustingroups,Trustingroups_7,Medical doctors and nurses,Läkare och sjuksköterskor
 1,Trustingroups,Trustingroups_8,,
-2,Trustingroups,Trustingroups_8,Scientists,forskare
+2,Trustingroups,Trustingroups_8,Scientists,Forskare
 1,Trustingroups,Trustingroups_9,,
-2,Trustingroups,Trustingroups_9,Politicians in the country you are living in,Politiker i det land du bor i
-0,Vaccine,,If a vaccine were to be available for the coronavirus/COVID-19 now:,Om ett vaccin skulle vara tillgängligt för coronavirus / COVID-19 nu:
+2,Trustingroups,Trustingroups_9,Politicians in the country you are living in,Politiker i landet du bor i
+0,Vaccine,,If a vaccine were to be available for the coronavirus/COVID-19 now:,Om ett vaccin blir tillgängligt för coronaviruset/COVID-19 just nu:
 1,Vaccine,Vaccine_1,,
-2,Vaccine,Vaccine_1,Would you get vaccinated yourself?,Skulle du vaccinera dig själv?
+2,Vaccine,Vaccine_1,Would you get vaccinated yourself?,Skulle du vaccinera dig?
 1,Vaccine,Vaccine_2,,
-2,Vaccine,Vaccine_2,Would you recommend vulnerable friends/family to get vaccinated?,Skulle du rekommendera utsatta vänner / familj att vaccineras?
+2,Vaccine,Vaccine_2,Would you recommend vulnerable friends/family to get vaccinated?,Skulle du rekommendera utsatta vänner/familj att bli vaccinerade?

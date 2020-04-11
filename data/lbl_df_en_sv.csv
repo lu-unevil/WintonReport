@@ -1,8 +1,8 @@
-var,code,label_en,label_se
+﻿var,code,label_en,label_se
 EndDate,,,
 DemGen,1,Female,Kvinna
-DemGen,2,Male,Manlig
-DemGen,3,Other,Övrig
+DemGen,2,Male,Man
+DemGen,3,Other,Annat
 DemGen,4,Prefer not to say,Föredrar att inte säga
 quota_age,1,18-24,18-24
 quota_age,2,25-34,25-34
@@ -11,127 +11,127 @@ quota_age,4,45-54,45-54
 quota_age,5,55-64,55-64
 quota_age,6,65+,65+
 Residency,,,
-GenSocTrust,1,Cant be too careful,Kan inte vara för försiktig
-GenSocTrust,7,Most people can be trusted,De flesta kan lita på
-Trustingroups_1,1,Cannot be trusted at all,Kan inte lita på alls
-Trustingroups_1,5,Can be trusted a lot,Kan lita mycket
-Trustingroups_2,1,Cannot be trusted at all,Kan inte lita på alls
-Trustingroups_2,5,Can be trusted a lot,Kan lita mycket
-Trustingroups_3,1,Cannot be trusted at all,Kan inte lita på alls
-Trustingroups_3,5,Can be trusted a lot,Kan lita mycket
-Trustingroups_4,1,Cannot be trusted at all,Kan inte lita på alls
-Trustingroups_4,5,Can be trusted a lot,Kan lita mycket
-Trustingroups_5,1,Cannot be trusted at all,Kan inte lita på alls
-Trustingroups_5,5,Can be trusted a lot,Kan lita mycket
-Trustingroups_6,1,Cannot be trusted at all,Kan inte lita på alls
-Trustingroups_6,5,Can be trusted a lot,Kan lita mycket
-Trustingroups_7,1,Cannot be trusted at all,Kan inte lita på alls
-Trustingroups_7,5,Can be trusted a lot,Kan lita mycket
-Trustingroups_8,1,Cannot be trusted at all,Kan inte lita på alls
-Trustingroups_8,5,Can be trusted a lot,Kan lita mycket
-Trustingroups_9,1,Cannot be trusted at all,Kan inte lita på alls
-Trustingroups_9,5,Can be trusted a lot,Kan lita mycket
-Trustingroups_10,1,Cannot be trusted at all,Kan inte lita på alls
-Trustingroups_10,5,Can be trusted a lot,Kan lita mycket
-Trustingroups_11,1,Cannot be trusted at all,Kan inte lita på alls
-Trustingroups_11,5,Can be trusted a lot,Kan lita mycket
-Trustingroups_12,1,Cannot be trusted at all,Kan inte lita på alls
-Trustingroups_12,5,Can be trusted a lot,Kan lita mycket
-Trustingroups_13,1,Cannot be trusted at all,Kan inte lita på alls
-Trustingroups_13,5,Can be trusted a lot,Kan lita mycket
+GenSocTrust,1,Cant be too careful,Man kan inte vara nog försiktig
+GenSocTrust,7,Most people can be trusted,Man kan lita på del flesta
+Trustingroups_1,1,Cannot be trusted at all,Går inte alls att lita på 
+Trustingroups_1,5,Can be trusted a lot,Går helt och hållet att lita på
+Trustingroups_2,1,Cannot be trusted at all,Går inte alls att lita på
+Trustingroups_2,5,Can be trusted a lot,Går helt och hållet att lita på
+Trustingroups_3,1,Cannot be trusted at all,Går inte alls att lita på
+Trustingroups_3,5,Can be trusted a lot,Går helt och hållet att lita på
+Trustingroups_4,1,Cannot be trusted at all,Går inte alls att lita på
+Trustingroups_4,5,Can be trusted a lot,Går helt och hållet att lita på
+Trustingroups_5,1,Cannot be trusted at all,Går inte alls att lita på
+Trustingroups_5,5,Can be trusted a lot,Går helt och hållet att lita på
+Trustingroups_6,1,Cannot be trusted at all,Går inte alls att lita på
+Trustingroups_6,5,Can be trusted a lot,Går helt och hållet att lita på
+Trustingroups_7,1,Cannot be trusted at all,Går inte alls att lita på
+Trustingroups_7,5,Can be trusted a lot,Går helt och hållet att lita på
+Trustingroups_8,1,Cannot be trusted at all,Går inte alls att lita på
+Trustingroups_8,5,Can be trusted a lot,Går helt och hållet att lita på
+Trustingroups_9,1,Cannot be trusted at all,Går inte alls att lita på
+Trustingroups_9,5,Can be trusted a lot,Går helt och hållet att lita på
+Trustingroups_10,1,Cannot be trusted at all,Går inte alls att lita på
+Trustingroups_10,5,Can be trusted a lot,Går helt och hållet att lita på
+Trustingroups_11,1,Cannot be trusted at all,Går inte alls att lita på
+Trustingroups_11,5,Can be trusted a lot,Går helt och hållet att lita på
+Trustingroups_12,1,Cannot be trusted at all,Går inte alls att lita på
+Trustingroups_12,5,Can be trusted a lot,Går helt och hållet att lita på
+Trustingroups_13,1,Cannot be trusted at all,Går inte alls att lita på
+Trustingroups_13,5,Can be trusted a lot,Går helt och hållet att lita på
 COVIDexp,9,Unsure,Osäker
 COVIDexp,8,No,Nej
-COVIDexp,3,I think I might have had it but am recovered,Jag tror att jag kanske hade haft det men är återhämtad
-COVIDexp,2,I think I might have it now but not tested,Jag tror att jag kan ha det nu men inte testat
-COVIDexp,1,Doctor suspected but tested negative,Läkaren misstänkte men testade negativt
-COVIDexp,4,Doctor suspected but no test yet,Läkare misstänks men inget test ännu
-COVIDexp,5,Doctor confirmed and am still infected,Läkaren bekräftade och är fortfarande smittad
-COVIDexp,6,Doctor confirmed but now test negative,Läkaren bekräftade men testar nu negativt
-COVIDexp,7,Doctor confirmed but not been tested again,Läkaren bekräftade men testades inte igen
-COVIDeffect_1,1,not at all affected,inte alls drabbade
-COVIDeffect_1,7,very much affected,mycket drabbade
-COVIDeffect_2,1,not at all affected,inte alls drabbade
-COVIDeffect_2,7,very much affected,mycket drabbade
-COVIDeffect_3,1,not at all affected,inte alls drabbade
-COVIDeffect_3,7,very much affected,mycket drabbade
-COVIDeffect_4,1,not at all affected,inte alls drabbade
-COVIDeffect_4,7,very much affected,mycket drabbade
+COVIDexp,3,I think I might have had it but am recovered,Jag tror jag kan ha haft COVID-19, men jag har inte blivit testad, och har tillfrisknat
+COVIDexp,2,I think I might have it now but not tested,Jag tror att jag kan ha COVID-19 just nu, men jag har inte blivit testad
+COVIDexp,1,Doctor suspected but tested negative,En läkare sa att jag var en misstänkt COVID-19 patient, men jag testades negativ
+COVIDexp,4,Doctor suspected but no test yet, En läkare sa att jag var en misstänkt COVID-19 patient, men jag har ännu in inte något besked från ett test
+COVIDexp,5,Doctor confirmed and am still infected,En läkare har bekräftat att jag har COVID-19, och jag är fortfarande infekterad
+COVIDexp,6,Doctor confirmed but now test negative, En läkare har bekräftat att jag har haft COVID-19, men jag har tillfrisknat och har nu testats negativ
+COVIDexp,7,Doctor confirmed but not been tested again, En läkare har bekräftat att jag har haft COVID-19, men jag har tillfrisknat och har inte testats igen
+COVIDeffect_1,1,not at all affected,inte alls påverkad 
+COVIDeffect_1,7,very much affected,mycket påverkad 
+COVIDeffect_2,1,not at all affected,inte alls påverkad 
+COVIDeffect_2,7,very much affected,mycket påverkad 
+COVIDeffect_3,1,not at all affected,inte alls påverkad
+COVIDeffect_3,7,very much affected,mycket påverkad
+COVIDeffect_4,1,not at all affected,inte alls påverkad
+COVIDeffect_4,7,very much affected,mycket påverkad
 SARS,1,Yes,Ja
 SARS,2,No,Nej
-CultCog_1,1,strongly disagree,Starkt emot
-CultCog_1,6,Strongly agree,Håller starkt med
-CultCog_2,1,strongly disagree,Starkt emot
-CultCog_2,6,Strongly agree,Håller starkt med
-CultCog_3,1,strongly disagree,Starkt emot
-CultCog_3,6,Strongly agree,Håller starkt med
-CultCog_4,1,strongly disagree,Starkt emot
-CultCog_4,6,Strongly agree,Håller starkt med
-CultCog_5,1,strongly disagree,Starkt emot
-CultCog_5,6,Strongly agree,Håller starkt med
-CultCog_6,1,strongly disagree,Starkt emot
-CultCog_6,6,Strongly agree,Håller starkt med
+CultCog_1,1,strongly disagree,håller absolut inte med 
+CultCog_1,6,strongly agree,håller absolut med 
+CultCog_2,1,strongly disagree,håller absolut inte med
+CultCog_2,6,strongly agree,håller absolut med
+CultCog_3,1,strongly disagree,håller absolut inte med
+CultCog_3,6,strongly agree,håller absolut med
+CultCog_4,1,strongly disagree,håller absolut inte med
+CultCog_4,6,strongly agree,håller absolut med
+CultCog_5,1,strongly disagree,håller absolut inte med
+CultCog_5,6,strongly agree,håller absolut med
+CultCog_6,1,strongly disagree,håller absolut inte med
+CultCog_6,6,strongly agree,håller absolut med
 prosocial,1,not at all,inte alls
-prosocial,7,very much so,mycket så
-CanadaQ_1,1,strongly disagree,Starkt emot
-CanadaQ_1,5,strongly agree,Håller starkt med
-CanadaQ_2,1,strongly disagree,Starkt emot
-CanadaQ_2,5,strongly agree,Håller starkt med
-CanadaQ_3,1,strongly disagree,Starkt emot
-CanadaQ_3,5,strongly agree,Håller starkt med
+prosocial,7,very much so,i högsta grad
+CanadaQ_1,1,strongly disagree,håller absolut inte med
+CanadaQ_1,5,strongly agree,håller absolut med
+CanadaQ_2,1,strongly disagree,håller absolut inte med
+CanadaQ_2,5,strongly agree,håller absolut med
+CanadaQ_3,1,strongly disagree,håller absolut inte med
+CanadaQ_3,5,strongly agree,håller absolut med
 FinitePool_1,1,not at all worried,inte alls orolig
-FinitePool_1,7,very worried,väldigt orolig
+FinitePool_1,7,very worried,mycket orolig
 FinitePool_2,1,not at all worried,inte alls orolig
-FinitePool_2,7,very worried,väldigt orolig
+FinitePool_2,7,very worried,mycket orolig
 FinitePool_3,1,not at all worried,inte alls orolig
-FinitePool_3,7,very worried,väldigt orolig
+FinitePool_3,7,very worried,mycket orolig
 FinitePool_4,1,not at all worried,inte alls orolig
-FinitePool_4,7,very worried,väldigt orolig
+FinitePool_4,7,very worried,mycket orolig
 FinitePool_5,1,not at all worried,inte alls orolig
-FinitePool_5,7,very worried,väldigt orolig
+FinitePool_5,7,very worried,mycket orolig
 FinitePool_6,1,not at all worried,inte alls orolig
-FinitePool_6,7,very worried,väldigt orolig
+FinitePool_6,7,very worried,mycket orolig
 FinitePool_7,1,not at all worried,inte alls orolig
-FinitePool_7,7,very worried,väldigt orolig
+FinitePool_7,7,very worried,mycket orolig
 FinitePool_8,1,not at all worried,inte alls orolig
-FinitePool_8,7,very worried,väldigt orolig
+FinitePool_8,7,very worried,mycket orolig
 Longitude_1,1,not at all worried,inte alls orolig
-Longitude_1,7,very worried,väldigt orolig
+Longitude_1,7,very worried,mycket orolig
 Longitude_2,1,not at all worried,inte alls orolig
-Longitude_2,7,very worried,väldigt orolig
+Longitude_2,7,very worried,mycket orolig
 Longitude_3,1,not at all worried,inte alls orolig
-Longitude_3,7,very worried,väldigt orolig
-Personal_1,1,not at all likely,Inte alls troligt
-Personal_1,7,very likely,väldigt troligt
-Personal_2,1,not at all likely,Inte alls troligt
-Personal_2,7,very likely,väldigt troligt
-Personal_3,1,not at all likely,Inte alls troligt
-Personal_3,7,very likely,väldigt troligt
-Personal_4,1,not at all likely,Inte alls troligt
-Personal_4,7,very likely,väldigt troligt
-Personal_5,1,not at all likely,Inte alls troligt
-Personal_5,7,very likely,väldigt troligt
-Personal_6,1,not at all likely,Inte alls troligt
-Personal_6,7,very likely,väldigt troligt
-Personal_7,1,not at all likely,Inte alls troligt
-Personal_7,7,very likely,väldigt troligt
-Personal_8,1,not at all likely,Inte alls troligt
-Personal_8,7,very likely,väldigt troligt
-Friends_1,1,not at all likely,Inte alls troligt
-Friends_1,7,very likely,väldigt troligt
-Friends_2,1,not at all likely,Inte alls troligt
-Friends_2,7,very likely,väldigt troligt
-Friends_3,1,not at all likely,Inte alls troligt
-Friends_3,7,very likely,väldigt troligt
-Friends_4,1,not at all likely,Inte alls troligt
-Friends_4,7,very likely,väldigt troligt
-Friends_5,1,not at all likely,Inte alls troligt
-Friends_5,7,very likely,väldigt troligt
-Friends_6,1,not at all likely,Inte alls troligt
-Friends_6,7,very likely,väldigt troligt
-Friends_7,1,not at all likely,Inte alls troligt
-Friends_7,7,very likely,väldigt troligt
-Friends_8,1,not at all likely,Inte alls troligt
-Friends_8,7,very likely,väldigt troligt
+Longitude_3,7,very worried,mycket orolig
+Personal_1,1,not at all likely,inte alls troligt
+Personal_1,7,very likely,mycket troligt
+Personal_2,1,not at all likely,inte alls troligt
+Personal_2,7,very likely,mycket troligt
+Personal_3,1,not at all likely,inte alls troligt
+Personal_3,7,very likely,mycket troligt
+Personal_4,1,not at all likely,inte alls troligt
+Personal_4,7,very likely,mycket troligt
+Personal_5,1,not at all likely,inte alls troligt
+Personal_5,7,very likely,mycket troligt
+Personal_6,1,not at all likely,inte alls troligt
+Personal_6,7,very likely,mycket troligt
+Personal_7,1,not at all likely,inte alls troligt
+Personal_7,7,very likely,mycket troligt
+Personal_8,1,not at all likely,inte alls troligt
+Personal_8,7,very likely,mycket troligt
+Friends_1,1,not at all likely,inte alls troligt
+Friends_1,7,very likely,mycket troligt
+Friends_2,1,not at all likely,inte alls troligt
+Friends_2,7,very likely,mycket troligt
+Friends_3,1,not at all likely,inte alls troligt
+Friends_3,7,very likely,mycket troligt
+Friends_4,1,not at all likely,inte alls troligt
+Friends_4,7,very likely,mycket troligt
+Friends_5,1,not at all likely,inte alls troligt
+Friends_5,7,very likely,mycket troligt
+Friends_6,1,not at all likely,inte alls troligt
+Friends_6,7,very likely,mycket troligt
+Friends_7,1,not at all likely,inte alls troligt
+Friends_7,7,very likely,mycket troligt
+Friends_8,1,not at all likely,inte alls troligt
+Friends_8,7,very likely,mycket troligt
 MediaExp_1,1,yes,Ja
 MediaExp_1,2,no,Nej
 MediaExp_2,1,yes,Ja
@@ -146,60 +146,60 @@ MediaExp_6,1,yes,Ja
 MediaExp_6,2,no,Nej
 MediaExp_7,1,yes,Ja
 MediaExp_7,2,no,Nej
-PosterstrustQ1,1,didnt trust at all,litade inte alls
-PosterstrustQ1,7,completely trusted,helt betrodda
-SocialmediatrustQ1,1,didnt trust at all,litade inte alls
-SocialmediatrustQ1,7,completely trusted,helt betrodda
-journalisttrustQ1,1,didnt trust at all,litade inte alls
-journalisttrustQ1,7,completely trusted,helt betrodda
-govtrustQ1,1,didnt trust at all,litade inte alls
-govtrustQ1,7,completely trusted,helt betrodda
-workplacetrustQ1,1,didnt trust at all,litade inte alls
-workplacetrustQ1,7,completely trusted,helt betrodda
-FriendstrustQ1,1,didnt trust at all,litade inte alls
-FriendstrustQ1,7,completely trusted,helt betrodda
-WHOtrustQ1,1,didnt trust at all,litade inte alls
-WHOtrustQ1,7,completely trusted,helt betrodda
+PosterstrustQ1,1,didnt trust at all,litade inte alls på den på den
+PosterstrustQ1,7,completely trusted,litade fullständigt på den  
+SocialmediatrustQ1,1,didnt trust at all,litade inte alls på den
+SocialmediatrustQ1,7,completely trusted,litade fullständigt på den  
+journalisttrustQ1,1,didnt trust at all,litade inte alls på den
+journalisttrustQ1,7,completely trusted,litade fullständigt på den  
+govtrustQ1,1,didnt trust at all,litade inte alls på den
+govtrustQ1,7,completely trusted,litade fullständigt på den  
+workplacetrustQ1,1,didnt trust at all,litade inte alls på den
+workplacetrustQ1,7,completely trusted,litade fullständigt på den  
+FriendstrustQ1,1,didnt trust at all,litade inte alls på den
+FriendstrustQ1,7,completely trusted,litade fullständigt på den  
+WHOtrustQ1,1,didnt trust at all,litade inte alls på den
+WHOtrustQ1,7,completely trusted,litade fullständigt på den  
 Soughtinfo,1,Yes,Ja
 Soughtinfo,2,No,Nej
-prep,1,washing hands more often,tvätta händerna ofta
-prep,2,using alcohol-based hand sanitizer more often,använder ofta alkoholbaserad handrensare
-prep,3,wearing a face mask,bär en ansiktsmask
-prep,4,avoiding social events,undvika sociala händelser
-prep,5,avoiding public transport,undvika kollektivtrafik
-prep,6,eating out less,äter mindre
-prep,7,touching your face less,röra dig mindre i ansiktet
-prep,8,shopping for groceries less,handla mindre mat
-prep,9,cooking at home more,matlagning hemma mer
+prep,1,washing hands more often,oftare tvätta händer
+prep,2,using alcohol-based hand sanitizer more often,oftare använda alkoholbaserade våtservetter
+prep,3,wearing a face mask,bära mask för ansiktet
+prep,4,avoiding social events,undvika sociala tillställningar
+prep,5,avoiding public transport,undvika allmänna transporter
+prep,6,eating out less,mer sällan äta ute på restauranger
+prep,7,touching your face less,mer sällan röra ditt ansikte
+prep,8,shopping for groceries less,mer sällan handla mat
+prep,9,cooking at home more,oftare laga mat hemma
 prep,10,staying home from work,stanna hemma från jobbet
-prep,11,purchasing extra supplies,köper extra leveranser
+prep,11,purchasing extra supplies,handla extra förråd av varor och mat
 Govresponse_1,1,not at all,inte alls
-Govresponse_1,7,very much,väldigt mycket
+Govresponse_1,7,very much,i allra högsta grad
 Govresponse_2,1,not at all,inte alls
-Govresponse_2,7,very much,väldigt mycket
+Govresponse_2,7,very much,i allra högsta grad 
 Govresponse_3,1,not at all,inte alls
-Govresponse_3,7,very much,väldigt mycket
+Govresponse_3,7,very much,i allra högsta grad 
 Govresponse_4,1,not at all,inte alls
-Govresponse_4,7,very much,väldigt mycket
+Govresponse_4,7,very much,i allra högsta grad 
 Govresponse_5,1,not at all,inte alls
-Govresponse_5,7,very much,väldigt mycket
+Govresponse_5,7,very much,i allra högsta grad 
 Govresponse_6,1,not at all,inte alls
-Govresponse_6,7,very much,väldigt mycket
+Govresponse_6,7,very much,i allra högsta grad 
 Govresponse_7,1,not at all,inte alls
-Govresponse_7,7,very much,väldigt mycket
+Govresponse_7,7,very much,i allra högsta grad 
 Govresponse_8,1,not at all,inte alls
-Govresponse_8,7,very much,väldigt mycket
+Govresponse_8,7,very much,i allra högsta grad 
 Govresponse_9,1,not at all,inte alls
-Govresponse_9,7,very much,väldigt mycket
-Govrestrict_1,1,not firm enough with restrictions on people,inte tillräckligt fast med begränsningar för människor
-Govrestrict_1,7,putting too many restrictions on people,sätta för många begränsningar för människor
-Govrestrict_1,8,I dont know the response,Jag vet inte svaret
-Govrestrict_2,1,not firm enough with restrictions on people,inte fast nog med begränsningar för människor
-Govrestrict_2,7,putting too many restrictions on people,sätta för många begränsningar för människor
-Govrestrict_2,8,I dont know the response,Jag vet inte svaret
-Govrestrict_3,1,not firm enough with restrictions on people,inte tillräckligt fast med begränsningar för människor
-Govrestrict_3,7,putting too many restrictions on people,sätta för många begränsningar för människor
-Govrestrict_3,8,I dont know the response,Jag vet inte svaret
+Govresponse_9,7,very much,i allra högsta grad 
+Govrestrict_1,1,not firm enough with restrictions on people,inte tillräckligt med begränsningar för människor
+Govrestrict_1,7,putting too many restrictions on people,för många begränsningar för människor
+Govrestrict_1,8,I dont know the response,jag känner inte till vilka åtgärderna var/är
+Govrestrict_2,1,not firm enough with restrictions on people,inte tillräckligt med begränsningar för människor
+Govrestrict_2,7,putting too many restrictions on people,för många begränsningar för människor
+Govrestrict_2,8,I dont know the response,jag känner inte till vilka åtgärderna var/är
+Govrestrict_3,1,not firm enough with restrictions on people,inte tillräckligt med begränsningar för människor
+Govrestrict_3,7,putting too many restrictions on people,för många begränsningar för människor
+Govrestrict_3,8,I dont know the response,jag känner inte till vilka åtgärderna var/är
 Sciunderstand,1,very limited understanding,mycket begränsad förståelse
 Sciunderstand,7,very good understanding,mycket god förståelse
 KnowledgeCert_1,1,very certain,mycket säker
@@ -214,23 +214,23 @@ Num1,,,
 Num2a,,,
 Num2b,,,
 Num3,,,
-NumeracyQ1,1,1 in 10,1 av 10
-NumeracyQ1,2,1 in 1000,1 av 1000
-NumeracyQ1,3,1 in 100,1 av 100
+NumeracyQ1,1,1 in 10,1 på 10
+NumeracyQ1,2,1 in 1000,1 på 1000
+NumeracyQ1,3,1 in 100,1 på 100
 DemAge,,,
-DemEdu,1,no formal above 16,ingen formell över 16
+DemEdu,1,no formal above 16,ingen formell efter 16
 DemEdu,2,,
 DemEdu,3,,
 DemEdu,4,,
-DemEdu,5,Masters,Masters
+DemEdu,5,Masters,Masterutbildning
 DemEdu,6,,
 DemEdu,7,,
 DemEdu,8,,
-DemEdu,9,doctorate,doktors
+DemEdu,9,doctorate,forskarutbildning
 DemHealthcare,1,yes,ja
 DemHealthcare,2,no,Nej
 Ethnic min,1,yes,ja
 Ethnic min,2,no,Nej
 Ethnic min,4,prefer not to answer,föredrar att inte svara
-Politics,1,very left,väldigt vänster vinge
-Politics,7,very right,väldigt högra vingen
+Politics,1,very left,mycket till vänster
+Politics,7,very right,mycket till höger
