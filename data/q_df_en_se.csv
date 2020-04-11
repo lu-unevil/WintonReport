@@ -14,7 +14,7 @@ row_id,var_group,var,txt_en,txt_se
 1,COVIDeffect,COVIDeffect_3,,
 2,COVIDeffect,COVIDeffect_3,I have experienced mental health difficulties as a result of the pandemic (e.g. increased anxiety),Jag har upplevt psykiska hälsoproblem som ett resultat av pandemin (t.ex. ökad ångest)
 1,COVIDeffect,COVIDeffect_4,,
-2,COVIDeffect,COVIDeffect_4,I have friends/family who have tested positive or died from the virus,I have friends/family who have tested positive or died from the virus
+2,COVIDeffect,COVIDeffect_4,I have friends/family who have tested positive or died from the virus,Jag har vänner / familj som har testat positivt eller dog av viruset
 1,COVIDexp,COVIDexp,"Have you ever had, or thought you might have, the coronavirus/COVID-19?","Har du någonsin haft, eller trodde, att du kan ha, coronavirus / COVID-19?"
 2,COVIDexp,COVIDexp,,
 0,CultCog,,People often disagree about how far to let individuals go in making decisions for themselves. How strongly do you agree or disagree with each of these statements?,Människor håller ofta med om hur långt de ska låta individer gå när de fattar beslut för sig själva. Hur starkt håller du med eller håller med om vart och ett av dessa uttalanden?
