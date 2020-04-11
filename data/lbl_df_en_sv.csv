@@ -1,0 +1,236 @@
+var,code,label_en,label_se
+EndDate,,,
+DemGen,1,Female,Kvinna
+DemGen,2,Male,Manlig
+DemGen,3,Other,Övrig
+DemGen,4,Prefer not to say,Föredrar att inte säga
+quota_age,1,18-24,18-24
+quota_age,2,25-34,25-34
+quota_age,3,35-44,35-44
+quota_age,4,45-54,45-54
+quota_age,5,55-64,55-64
+quota_age,6,65+,65+
+Residency,,,
+GenSocTrust,1,Cant be too careful,Kan inte vara för försiktig
+GenSocTrust,7,Most people can be trusted,De flesta kan lita på
+Trustingroups_1,1,Cannot be trusted at all,Kan inte lita på alls
+Trustingroups_1,5,Can be trusted a lot,Kan lita mycket
+Trustingroups_2,1,Cannot be trusted at all,Kan inte lita på alls
+Trustingroups_2,5,Can be trusted a lot,Kan lita mycket
+Trustingroups_3,1,Cannot be trusted at all,Kan inte lita på alls
+Trustingroups_3,5,Can be trusted a lot,Kan lita mycket
+Trustingroups_4,1,Cannot be trusted at all,Kan inte lita på alls
+Trustingroups_4,5,Can be trusted a lot,Kan lita mycket
+Trustingroups_5,1,Cannot be trusted at all,Kan inte lita på alls
+Trustingroups_5,5,Can be trusted a lot,Kan lita mycket
+Trustingroups_6,1,Cannot be trusted at all,Kan inte lita på alls
+Trustingroups_6,5,Can be trusted a lot,Kan lita mycket
+Trustingroups_7,1,Cannot be trusted at all,Kan inte lita på alls
+Trustingroups_7,5,Can be trusted a lot,Kan lita mycket
+Trustingroups_8,1,Cannot be trusted at all,Kan inte lita på alls
+Trustingroups_8,5,Can be trusted a lot,Kan lita mycket
+Trustingroups_9,1,Cannot be trusted at all,Kan inte lita på alls
+Trustingroups_9,5,Can be trusted a lot,Kan lita mycket
+Trustingroups_10,1,Cannot be trusted at all,Kan inte lita på alls
+Trustingroups_10,5,Can be trusted a lot,Kan lita mycket
+Trustingroups_11,1,Cannot be trusted at all,Kan inte lita på alls
+Trustingroups_11,5,Can be trusted a lot,Kan lita mycket
+Trustingroups_12,1,Cannot be trusted at all,Kan inte lita på alls
+Trustingroups_12,5,Can be trusted a lot,Kan lita mycket
+Trustingroups_13,1,Cannot be trusted at all,Kan inte lita på alls
+Trustingroups_13,5,Can be trusted a lot,Kan lita mycket
+COVIDexp,9,Unsure,Osäker
+COVIDexp,8,No,Nej
+COVIDexp,3,I think I might have had it but am recovered,Jag tror att jag kanske hade haft det men är återhämtad
+COVIDexp,2,I think I might have it now but not tested,Jag tror att jag kan ha det nu men inte testat
+COVIDexp,1,Doctor suspected but tested negative,Läkaren misstänkte men testade negativt
+COVIDexp,4,Doctor suspected but no test yet,Läkare misstänks men inget test ännu
+COVIDexp,5,Doctor confirmed and am still infected,Läkaren bekräftade och är fortfarande smittad
+COVIDexp,6,Doctor confirmed but now test negative,Läkaren bekräftade men testar nu negativt
+COVIDexp,7,Doctor confirmed but not been tested again,Läkaren bekräftade men testades inte igen
+COVIDeffect_1,1,not at all affected,inte alls drabbade
+COVIDeffect_1,7,very much affected,mycket drabbade
+COVIDeffect_2,1,not at all affected,inte alls drabbade
+COVIDeffect_2,7,very much affected,mycket drabbade
+COVIDeffect_3,1,not at all affected,inte alls drabbade
+COVIDeffect_3,7,very much affected,mycket drabbade
+COVIDeffect_4,1,not at all affected,inte alls drabbade
+COVIDeffect_4,7,very much affected,mycket drabbade
+SARS,1,Yes,Ja
+SARS,2,No,Nej
+CultCog_1,1,strongly disagree,Starkt emot
+CultCog_1,6,Strongly agree,Håller starkt med
+CultCog_2,1,strongly disagree,Starkt emot
+CultCog_2,6,Strongly agree,Håller starkt med
+CultCog_3,1,strongly disagree,Starkt emot
+CultCog_3,6,Strongly agree,Håller starkt med
+CultCog_4,1,strongly disagree,Starkt emot
+CultCog_4,6,Strongly agree,Håller starkt med
+CultCog_5,1,strongly disagree,Starkt emot
+CultCog_5,6,Strongly agree,Håller starkt med
+CultCog_6,1,strongly disagree,Starkt emot
+CultCog_6,6,Strongly agree,Håller starkt med
+prosocial,1,not at all,inte alls
+prosocial,7,very much so,mycket så
+CanadaQ_1,1,strongly disagree,Starkt emot
+CanadaQ_1,5,strongly agree,Håller starkt med
+CanadaQ_2,1,strongly disagree,Starkt emot
+CanadaQ_2,5,strongly agree,Håller starkt med
+CanadaQ_3,1,strongly disagree,Starkt emot
+CanadaQ_3,5,strongly agree,Håller starkt med
+FinitePool_1,1,not at all worried,inte alls orolig
+FinitePool_1,7,very worried,väldigt orolig
+FinitePool_2,1,not at all worried,inte alls orolig
+FinitePool_2,7,very worried,väldigt orolig
+FinitePool_3,1,not at all worried,inte alls orolig
+FinitePool_3,7,very worried,väldigt orolig
+FinitePool_4,1,not at all worried,inte alls orolig
+FinitePool_4,7,very worried,väldigt orolig
+FinitePool_5,1,not at all worried,inte alls orolig
+FinitePool_5,7,very worried,väldigt orolig
+FinitePool_6,1,not at all worried,inte alls orolig
+FinitePool_6,7,very worried,väldigt orolig
+FinitePool_7,1,not at all worried,inte alls orolig
+FinitePool_7,7,very worried,väldigt orolig
+FinitePool_8,1,not at all worried,inte alls orolig
+FinitePool_8,7,very worried,väldigt orolig
+Longitude_1,1,not at all worried,inte alls orolig
+Longitude_1,7,very worried,väldigt orolig
+Longitude_2,1,not at all worried,inte alls orolig
+Longitude_2,7,very worried,väldigt orolig
+Longitude_3,1,not at all worried,inte alls orolig
+Longitude_3,7,very worried,väldigt orolig
+Personal_1,1,not at all likely,Inte alls troligt
+Personal_1,7,very likely,väldigt troligt
+Personal_2,1,not at all likely,Inte alls troligt
+Personal_2,7,very likely,väldigt troligt
+Personal_3,1,not at all likely,Inte alls troligt
+Personal_3,7,very likely,väldigt troligt
+Personal_4,1,not at all likely,Inte alls troligt
+Personal_4,7,very likely,väldigt troligt
+Personal_5,1,not at all likely,Inte alls troligt
+Personal_5,7,very likely,väldigt troligt
+Personal_6,1,not at all likely,Inte alls troligt
+Personal_6,7,very likely,väldigt troligt
+Personal_7,1,not at all likely,Inte alls troligt
+Personal_7,7,very likely,väldigt troligt
+Personal_8,1,not at all likely,Inte alls troligt
+Personal_8,7,very likely,väldigt troligt
+Friends_1,1,not at all likely,Inte alls troligt
+Friends_1,7,very likely,väldigt troligt
+Friends_2,1,not at all likely,Inte alls troligt
+Friends_2,7,very likely,väldigt troligt
+Friends_3,1,not at all likely,Inte alls troligt
+Friends_3,7,very likely,väldigt troligt
+Friends_4,1,not at all likely,Inte alls troligt
+Friends_4,7,very likely,väldigt troligt
+Friends_5,1,not at all likely,Inte alls troligt
+Friends_5,7,very likely,väldigt troligt
+Friends_6,1,not at all likely,Inte alls troligt
+Friends_6,7,very likely,väldigt troligt
+Friends_7,1,not at all likely,Inte alls troligt
+Friends_7,7,very likely,väldigt troligt
+Friends_8,1,not at all likely,Inte alls troligt
+Friends_8,7,very likely,väldigt troligt
+MediaExp_1,1,yes,Ja
+MediaExp_1,2,no,Nej
+MediaExp_2,1,yes,Ja
+MediaExp_2,2,no,Nej
+MediaExp_3,1,yes,Ja
+MediaExp_3,2,no,Nej
+MediaExp_4,1,yes,Ja
+MediaExp_4,2,no,Nej
+MediaExp_5,1,yes,Ja
+MediaExp_5,2,no,Nej
+MediaExp_6,1,yes,Ja
+MediaExp_6,2,no,Nej
+MediaExp_7,1,yes,Ja
+MediaExp_7,2,no,Nej
+PosterstrustQ1,1,didnt trust at all,litade inte alls
+PosterstrustQ1,7,completely trusted,helt betrodda
+SocialmediatrustQ1,1,didnt trust at all,litade inte alls
+SocialmediatrustQ1,7,completely trusted,helt betrodda
+journalisttrustQ1,1,didnt trust at all,litade inte alls
+journalisttrustQ1,7,completely trusted,helt betrodda
+govtrustQ1,1,didnt trust at all,litade inte alls
+govtrustQ1,7,completely trusted,helt betrodda
+workplacetrustQ1,1,didnt trust at all,litade inte alls
+workplacetrustQ1,7,completely trusted,helt betrodda
+FriendstrustQ1,1,didnt trust at all,litade inte alls
+FriendstrustQ1,7,completely trusted,helt betrodda
+WHOtrustQ1,1,didnt trust at all,litade inte alls
+WHOtrustQ1,7,completely trusted,helt betrodda
+Soughtinfo,1,Yes,Ja
+Soughtinfo,2,No,Nej
+prep,1,washing hands more often,tvätta händerna ofta
+prep,2,using alcohol-based hand sanitizer more often,använder ofta alkoholbaserad handrensare
+prep,3,wearing a face mask,bär en ansiktsmask
+prep,4,avoiding social events,undvika sociala händelser
+prep,5,avoiding public transport,undvika kollektivtrafik
+prep,6,eating out less,äter mindre
+prep,7,touching your face less,röra dig mindre i ansiktet
+prep,8,shopping for groceries less,handla mindre mat
+prep,9,cooking at home more,matlagning hemma mer
+prep,10,staying home from work,stanna hemma från jobbet
+prep,11,purchasing extra supplies,köper extra leveranser
+Govresponse_1,1,not at all,inte alls
+Govresponse_1,7,very much,väldigt mycket
+Govresponse_2,1,not at all,inte alls
+Govresponse_2,7,very much,väldigt mycket
+Govresponse_3,1,not at all,inte alls
+Govresponse_3,7,very much,väldigt mycket
+Govresponse_4,1,not at all,inte alls
+Govresponse_4,7,very much,väldigt mycket
+Govresponse_5,1,not at all,inte alls
+Govresponse_5,7,very much,väldigt mycket
+Govresponse_6,1,not at all,inte alls
+Govresponse_6,7,very much,väldigt mycket
+Govresponse_7,1,not at all,inte alls
+Govresponse_7,7,very much,väldigt mycket
+Govresponse_8,1,not at all,inte alls
+Govresponse_8,7,very much,väldigt mycket
+Govresponse_9,1,not at all,inte alls
+Govresponse_9,7,very much,väldigt mycket
+Govrestrict_1,1,not firm enough with restrictions on people,inte tillräckligt fast med begränsningar för människor
+Govrestrict_1,7,putting too many restrictions on people,sätta för många begränsningar för människor
+Govrestrict_1,8,I dont know the response,Jag vet inte svaret
+Govrestrict_2,1,not firm enough with restrictions on people,inte fast nog med begränsningar för människor
+Govrestrict_2,7,putting too many restrictions on people,sätta för många begränsningar för människor
+Govrestrict_2,8,I dont know the response,Jag vet inte svaret
+Govrestrict_3,1,not firm enough with restrictions on people,inte tillräckligt fast med begränsningar för människor
+Govrestrict_3,7,putting too many restrictions on people,sätta för många begränsningar för människor
+Govrestrict_3,8,I dont know the response,Jag vet inte svaret
+Sciunderstand,1,very limited understanding,mycket begränsad förståelse
+Sciunderstand,7,very good understanding,mycket god förståelse
+KnowledgeCert_1,1,very certain,mycket säker
+KnowledgeCert_1,7,very uncertain,mycket osäker
+KnowledgeCert_2,1,very certain,mycket säker
+KnowledgeCert_2,7,very uncertain,mycket osäker
+Vaccine_1,1,yes,ja
+Vaccine_1,2,no,Nej
+Vaccine_2,1,yes,ja
+Vaccine_2,2,no,Nej
+Num1,,,
+Num2a,,,
+Num2b,,,
+Num3,,,
+NumeracyQ1,1,1 in 10,1 av 10
+NumeracyQ1,2,1 in 1000,1 av 1000
+NumeracyQ1,3,1 in 100,1 av 100
+DemAge,,,
+DemEdu,1,no formal above 16,ingen formell över 16
+DemEdu,2,,
+DemEdu,3,,
+DemEdu,4,,
+DemEdu,5,Masters,Masters
+DemEdu,6,,
+DemEdu,7,,
+DemEdu,8,,
+DemEdu,9,doctorate,doktors
+DemHealthcare,1,yes,ja
+DemHealthcare,2,no,Nej
+Ethnic min,1,yes,ja
+Ethnic min,2,no,Nej
+Ethnic min,4,prefer not to answer,föredrar att inte svara
+Politics,1,very left,väldigt vänster vinge
+Politics,7,very right,väldigt högra vingen
