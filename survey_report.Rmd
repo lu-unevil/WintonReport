@@ -265,7 +265,7 @@ plot_categorical <- function(var_name, q_dfa=q_df, lbl_dfa=lbl_df, data_dfa=data
    # scale_fill_manual(values=clrs)+
    #scale_colour_brewer(palette = "Dark2")+
     #scale_fill_brewer(palette = "Dark2")+
-    scale_x_continuous(labels = scales::percent)+
+    scale_x_continuous(labels = scales::percent, limits=c(0,1))+
     labs(title=with(q_var_df, question[row_id==1]),
          subtitle = with(q_var_df, question[row_id==2]),           
          y=NULL, x=NULL) + 
@@ -302,7 +302,7 @@ plot_binary <- function(var_name, q_dfa=q_df, lbl_dfa=lbl_df, data_dfa=data_df){
     scale_fill_manual(values=clrs ) +
     theme_ipsum_rc(grid=FALSE)+
     scale_y_discrete(expand =  expansion(add = c(0,1)))+
-    scale_x_continuous(labels = scales::percent)+
+    scale_x_continuous(labels = scales::percent, limits=c(0,1))+
     labs(title=wrap_txt(with(q_var_df, question[row_id==1]), 75), 
          y=NULL, x=NULL) + 
     theme(panel.grid.major = element_blank(),
@@ -355,7 +355,8 @@ plot_binary_group <- function(var_group_name, q_dfa=q_df, lbl_dfa=lbl_df, data_d
     scale_fill_manual(values=clrs) +
     theme_ipsum_rc(grid=FALSE)+
     scale_y_discrete(expand =  expansion(add = c(1,0)))+
-    scale_x_continuous(labels = scales::percent, expand = expansion(add=c(0.01, 0.02)))+
+    scale_x_continuous(labels = scales::percent, limits=c(0,1),
+                       expand = expansion(add=c(0.01, 0.02)))+
     labs(title=wrap_txt(q_title,105), 
          y=NULL, x=NULL) + 
     theme(panel.grid.minor = element_blank(),
@@ -518,268 +519,5 @@ plot_group("KnowledgeCert")
 ```{r, echo=FALSE, fig.width=12, fig.height=5}
 
 plot_binary_group("Vaccine")
-
-```
-
-## Numeracy questions
-
-```{r, echo=FALSE}
-lbls <- tibble::tribble(~type, ~lang, ~lbl,
-                        "title", "en", "Top-5 answers by country",
-                        "subtitle", "en", "Correct answer is highlighted",
-                        "y", "en", "% of respondents",
-                        "title", "se", "Topp-5 svar per land",
-                        "subtitle", "se", "Rätt svar markeras",
-                        "y", "se", "% av de svarande"
-                        ) %>% 
-  filter(lang==!!lang)
-```
-
-
-### Men choir
-
-```{r, echo=FALSE}
-q <- q_df %>% 
-  filter(var=="Num1", row_id==1) %>% 
-  pull(question)
-```
-
-> `r q`
-
-```{r, echo=FALSE, fig.width=12, fig.height=16}
- clrs <- RColorBrewer::brewer.pal(7, "BrBG")[c(1,7)]
-
-data_df %>% 
-   filter(var=="Num1") %>% 
-   left_join(q_df, by="var") %>% 
-   mutate(code=ifelse(as.numeric(code)<1, as.integer(as.numeric(code)*100), as.integer(code))) %>% 
-  group_by(var, Residency, code) %>% 
-  summarize(pct=sum(pct)) %>% 
-  arrange(Residency, desc(pct)) %>% 
-   group_by(Residency) %>% 
-   slice(1:5) %>%  
-   mutate(answer_rank=1:n(),
-          answer=ifelse(code==25L, "right", "wrong")) %>% 
-   left_join(country_df, by="Residency") %>% 
-   ggplot()+
-   geom_col(mapping=aes(x=code, y=pct, fill=answer), show.legend = FALSE) +
-  geom_text(mapping=aes(x=code, y=0.03, label=code), color="white")+
-   facet_wrap(vars(paste(countryflag, countryname)), ncol = 2) +
-   theme_ipsum_rc(grid=FALSE)+
-  scale_fill_manual(values = clrs)+
-  scale_y_continuous(labels = scales::percent)+
-   labs( title= with(lbls, lbl[type=="title"]),
-         subtitle = with(lbls, lbl[type=="subtitle"]),
-     y=with(lbls, lbl[type=="y"]), x=NULL)+
-    theme(panel.grid.minor = element_blank(),
-          panel.grid.major = element_blank(),
-          axis.line.x = element_blank(),
-          axis.ticks = element_blank(),
-          plot.title = element_text(lineheight = 1.1, face="bold"),
-          strip.text = element_text(size=14),
-          legend.position = 'none')
- 
-```
-
-### Odd number on a 5-sided die
-
-```{r, echo=FALSE}
-q <- q_df %>% 
-  filter(var=="Num2a", row_id==1) %>% 
-  pull(question)
-```
-
-> `r q`
-
-```{r, echo=FALSE, fig.width=12, fig.height=16}
- clrs <- RColorBrewer::brewer.pal(7, "BrBG")[c(1,7)]
-
-data_df %>% 
-   filter(var=="Num2a") %>% 
-   left_join(q_df, by="var") %>% 
-   mutate(code=ifelse(as.numeric(code)<1, as.integer(as.numeric(code)*100), as.integer(code))) %>% 
-  group_by(var, Residency, code) %>% 
-  summarize(pct=sum(pct)) %>% 
-  arrange(Residency, desc(pct)) %>% 
-   group_by(Residency) %>% 
-   slice(1:5) %>%  
-   mutate(answer_rank=1:n(),
-          answer=ifelse(code==30L, "right", "wrong")) %>% 
-   left_join(country_df, by="Residency") %>% 
-   ggplot()+
-   geom_col(mapping=aes(x=code, y=pct, fill=answer), show.legend = FALSE) +
-  geom_text(mapping=aes(x=code, y=0.03, label=code), color="white")+
-   facet_wrap(vars(paste(countryflag, countryname)), ncol = 2) +
-   theme_ipsum_rc(grid=FALSE)+
-  scale_fill_manual(values = clrs)+
-  scale_y_continuous(labels = scales::percent)+
-   labs( title= with(lbls, lbl[type=="title"]),
-         subtitle =with(lbls, lbl[type=="subtitle"]),
-     y=with(lbls, lbl[type=="y"]), x=NULL)+
-    theme(panel.grid.minor = element_blank(),
-          panel.grid.major = element_blank(),
-          axis.line.x = element_blank(),
-          axis.ticks = element_blank(),
-          plot.title = element_text(lineheight = 1.1, face="bold"),
-          strip.text = element_text(size=14),
-          legend.position = 'none')
-
-```
-
-
-### Loaded die
-
-```{r, echo=FALSE}
-q <- q_df %>% 
-  filter(var=="Num2b", row_id==1) %>% 
-  pull(question)
-```
-
-> `r q`
-
-```{r, echo=FALSE, fig.width=12, fig.height=16}
- clrs <- RColorBrewer::brewer.pal(7, "BrBG")[c(1,7)]
-
-data_df %>% 
-   filter(var=="Num2b") %>% 
-   left_join(q_df, by="var") %>% 
-   mutate(code=ifelse(as.numeric(code)<1, as.integer(as.numeric(code)*100), as.integer(code))) %>% 
-  group_by(var, Residency, code) %>% 
-  summarize(pct=sum(pct)) %>% 
-  arrange(Residency, desc(pct)) %>% 
-   group_by(Residency) %>% 
-   slice(1:5) %>%  
-   mutate(answer_rank=1:n(),
-          answer=ifelse(code==20L, "right", "wrong")) %>% 
-   left_join(country_df, by="Residency") %>% 
-   ggplot()+
-   geom_col(mapping=aes(x=code, y=pct, fill=answer), show.legend = FALSE) +
-  geom_text(mapping=aes(x=code, y=0.03, label=code), color="white")+
-   facet_wrap(vars(paste(countryflag, countryname)), ncol = 2) +
-   theme_ipsum_rc(grid=FALSE)+
-  scale_fill_manual(values = clrs)+
-  scale_y_continuous(labels = scales::percent)+
-   labs( title= with(lbls, lbl[type=="title"]),
-         subtitle = with(lbls, lbl[type=="subtitle"]),
-     y=with(lbls, lbl[type=="y"]), x=NULL)+
-    theme(panel.grid.minor = element_blank(),
-          panel.grid.major = element_blank(),
-          axis.line.x = element_blank(),
-          axis.ticks = element_blank(),
-          plot.title = element_text(lineheight = 1.1, face="bold"),
-          strip.text = element_text(size=14),
-          legend.position = 'none')
-
-```
-
-### Mushrooms
-
-```{r, echo=FALSE}
-q <- q_df %>% 
-  filter(var=="Num3", row_id==1) %>% 
-  pull(question)
-```
-
-> `r q`
-
-```{r, echo=FALSE, fig.width=12, fig.height=16}
- clrs <- RColorBrewer::brewer.pal(7, "BrBG")[c(1,7)]
-
-data_df %>% 
-   filter(var=="Num3") %>% 
-   left_join(q_df, by="var") %>% 
-   mutate(code=ifelse(as.numeric(code)<1, as.integer(as.numeric(code)*100), as.integer(code))) %>% 
-  group_by(var, Residency, code) %>% 
-  summarize(pct=sum(pct)) %>% 
-  arrange(Residency, desc(pct)) %>% 
-   group_by(Residency) %>% 
-   slice(1:5) %>%  
-   mutate(answer_rank=1:n(),
-          answer=ifelse(code==50L, "right", "wrong")) %>% 
-   left_join(country_df, by="Residency") %>% 
-   ggplot()+
-   geom_col(mapping=aes(x=code, y=pct, fill=answer), show.legend = FALSE) +
-  geom_text(mapping=aes(x=code, y=0.03, label=code), color="white")+
-   facet_wrap(vars(paste(countryflag, countryname)), ncol = 2) +
-   theme_ipsum_rc(grid=FALSE)+
-  scale_fill_manual(values = clrs)+
-  scale_y_continuous(labels = scales::percent)+
-   labs( title= with(lbls, lbl[type=="title"]),
-         subtitle = with(lbls, lbl[type=="subtitle"]),
-     y=with(lbls, lbl[type=="y"]), x=NULL)+
-    theme(panel.grid.minor = element_blank(),
-          panel.grid.major = element_blank(),
-          axis.line.x = element_blank(),
-          axis.ticks = element_blank(),
-          plot.title = element_text(lineheight = 1.1, face="bold"),
-          strip.text = element_text(size=14),
-          legend.position = 'none')
-
-```
-
-### Highest risk
-
-```{r, fig.width=12, fig.height=12, echo=FALSE}
-plot_categorical("NumeracyQ1")
-```
-
-```{r, echo=FALSE, fig.width=7, fig.height=4}
-
-lbls <- tibble::tribble(~type, ~lang, ~lbl,
-                        "title", "en", "Distribution of Age by country",
-                        "x", "en", "Age",
-                        "colorfill", "en", "Country",
-                        "title", "se", "Fördelning av ålder per land",
-                        "x", "se", "Ålder",
-                        "colorfill", "se", "Land"
-                        ) %>% 
-  filter(lang==!!lang)
-
-df_lng_raw %>% 
-   filter(var=="DemAge") %>% 
-   mutate(code=ifelse(as.numeric(code)<1, as.integer(as.numeric(code)*100), as.integer(code))) %>% 
-  filter(code<100L) %>%  
-  left_join(country_df, by="Residency") %>% 
-   ggplot()+
-   geom_density(mapping=aes(x=code, fill=paste(countryflag, countryname),
-                            color=paste(countryflag, countryname)), 
-                alpha=0.2) +
-   scale_colour_brewer(palette = "Dark2")+
-   scale_fill_brewer(palette = "Dark2")+
-   theme_ipsum_rc(grid=FALSE)+
-   labs( title= with(lbls, lbl[type=="title"]),
-     x=with(lbls, lbl[type=="x"]), 
-     color=with(lbls, lbl[type=="colorfill"]), 
-     fill=with(lbls, lbl[type=="colorfill"]))+
-    theme(panel.grid.minor = element_blank(),
-          panel.grid.major = element_blank(),
-          axis.line.x = element_blank(),
-          axis.ticks = element_blank(),
-          plot.title = element_text(lineheight = 1.1, face="bold"),
-          strip.text = element_text(size=12))
-
-```
-
-
-
-## Demographic questions
-
-```{r, fig.width=7, fig.height=4}
-plot_single("DemEdu")
-```
-
-```{r, fig.width=7, fig.height=4}
-plot_binary("DemHealthcare")
-```
-
-```{r, fig.width=7, fig.height=4}
-plot_binary("Ethnic min")
-```
-
-## Politics
-
-```{r, echo=FALSE, fig.width=7, fig.height=4}
-
-plot_single("Politics")
 
 ```
