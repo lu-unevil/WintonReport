@@ -1,6 +1,6 @@
 ---
-title: "Riskuppfattning av COVID-19/koronavirus"
-author: "UnEviL Research Group, Lund University"
+title: "Riskuppfattning av COVID-19/coronaviruset"
+author: "[Osäkerhet och evidenslabbet](https://www.cec.lu.se/research/unevil)  \nLunds Universitet"
 date: "12/04/2020"
 output: 
   html_document: 

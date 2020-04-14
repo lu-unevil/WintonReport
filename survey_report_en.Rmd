@@ -1,6 +1,6 @@
 ---
 title: "Risk perception of COVID-19/coronavirus"
-author: "UnEviL Research Group, Lund University"
+author: "[Uncertainty and Evidence Lab](https://www.cec.lu.se/research/unevil)  \nLund University"
 date: "12/04/2020"
 output: 
   html_document: 
