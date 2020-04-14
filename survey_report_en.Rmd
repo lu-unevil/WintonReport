@@ -1,7 +1,7 @@
 ---
 title: "Risk perception of COVID-19/coronavirus"
 author: "[Uncertainty and Evidence Lab](https://www.cec.lu.se/research/unevil)  \nLund University"
-date: "12/04/2020"
+date: "14/04/2020"
 output: 
   html_document: 
     theme: paper
@@ -18,7 +18,7 @@ knitr::read_chunk('survey_chunks.R')
 ## Introduction
 
 This document visualizes results of the international [survey by Winton Centre for Risk and Evidence Communication](https://www.cam.ac.uk/stories/wintoncovid1) about people's attitudes towards the risk of coronavirus, and their governments’ reactions.
-
+Data were collected in the period 19 - 29th of March 2020. 
 ```{r prepare_data}
 
 ```

@@ -1,7 +1,7 @@
 ---
 title: "Riskuppfattning av COVID-19/coronaviruset"
 author: "[Osäkerhet och evidenslabbet](https://www.cec.lu.se/research/unevil)  \nLunds Universitet"
-date: "12/04/2020"
+date: "14/04/2020"
 output: 
   html_document: 
     theme: paper
@@ -18,7 +18,7 @@ knitr::read_chunk('survey_chunks.R')
 ## Introduktion
 
 Detta dokument visualiserar resultaten från den internationella [undersökningen av Winton Center for Risk and Evidence Communication](https://www.cam.ac.uk/stories/wintoncovid1) om människors inställning till risken för koronavirus och deras regeringars reaktioner..
-
+Data samlades in under perioden 19 - 29 mars 2020. 
 ```{r prepare_data}
 
 ```
