@@ -1,5 +1,5 @@
 ---
-title: "Visualization of survey Risk perception of COVID-19/coronavirus"
+title: "Risk perception of COVID-19/coronavirus"
 author: "UnEviL Research Group, Lund University"
 date: "12/04/2020"
 output: 
@@ -40,15 +40,19 @@ This document visualizes results of the international [survey by Winton Centre f
 
 ```
 
-## COVID-19 Experience
+## Experience of COVID-19
 
 ```{r covid_1, fig.width=12, fig.height=12}
 
 ```
 
+## Effects from COVID-19
+
 ```{r covid_2, fig.width=12, fig.height=8}
 
 ```
+
+## Experiences of similar diseases
 
 ```{r sars_1, fig.width=7, fig.height=4}
 
@@ -64,11 +68,13 @@ This document visualizes results of the international [survey by Winton Centre f
 
 ```
 
-## Personal attitudes
+## Risk perception of COVID-19
 
 ```{r canadaq_1, fig.width=12, fig.height=9}
 
 ```
+
+## Worry of COVID-19
 
 ```{r finitepool_1, fig.width=12, fig.height=16}
 
@@ -78,15 +84,19 @@ This document visualizes results of the international [survey by Winton Centre f
 
 ```
 
+## Direct and personal effects
+
 ```{r personal_1, fig.width=12, fig.height=16}
 
 ```
+
+## Direct effects on friends and family
 
 ```{r friends_1, fig.width=12, fig.height=16}
 
 ```
 
-## Media exposure and trust
+## Use and trust in information
 
 ```{r mediaexp_1, fig.width=12, fig.height=16}
 
@@ -96,7 +106,7 @@ This document visualizes results of the international [survey by Winton Centre f
 
 ```
 
-## Personal investigation and actions
+## Preparedness
 
 ```{r soughtinfo_1, fig.width=7, fig.height=4}
 
@@ -106,7 +116,7 @@ This document visualizes results of the international [survey by Winton Centre f
 
 ```
 
-## Government response
+## Governmental response
 
 ```{r govresponse_1, fig.width=12, fig.height=18}
 
@@ -116,7 +126,7 @@ This document visualizes results of the international [survey by Winton Centre f
 
 ```
 
-## Science understanding
+## Scientific knowledge
 
 ```{r sciunderstand_1, fig.width=7, fig.height=4}
 
@@ -126,6 +136,8 @@ This document visualizes results of the international [survey by Winton Centre f
 
 ```
 
-```{r sciunderstand_3, fig.width=12, fig.height=5}
+## Vaccine
+
+```{r vaccine_1, fig.width=12, fig.height=5}
 
 ```

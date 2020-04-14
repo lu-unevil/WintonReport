@@ -447,7 +447,7 @@ plot_single("Sciunderstand")
 plot_group("KnowledgeCert")
 ##########  END  ###########
 
-## @knitr sciunderstand_3
+## @knitr vaccine_1
 ########## BEGIN ###########
 plot_binary_group("Vaccine")
 ##########  END  ###########

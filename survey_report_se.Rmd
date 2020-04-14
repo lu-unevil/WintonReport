@@ -1,5 +1,5 @@
 ---
-title: "Visualisering av undersökningen Riskuppfattning av COVID-19/koronavirus"
+title: "Riskuppfattning av COVID-19/koronavirus"
 author: "UnEviL Research Group, Lund University"
 date: "12/04/2020"
 output: 
@@ -29,7 +29,7 @@ Detta dokument visualiserar resultaten från den internationella [undersökninge
 
 ```
 
-## Tillit
+## Förtroende
 
 ```{r trust_1, fig.width=7, fig.height=4}
 
@@ -40,15 +40,19 @@ Detta dokument visualiserar resultaten från den internationella [undersökninge
 
 ```
 
-## COVID-19 erfarenhet
+## Erfarenheter av COVID-19
 
 ```{r covid_1, fig.width=12, fig.height=12}
 
 ```
 
+## Effekter av COVID-19
+
 ```{r covid_2, fig.width=12, fig.height=8}
 
 ```
+
+## Erfarenheter av liknande sjukdomar
 
 ```{r sars_1, fig.width=7, fig.height=4}
 
@@ -64,11 +68,13 @@ Detta dokument visualiserar resultaten från den internationella [undersökninge
 
 ```
 
-## Personliga inställning
+## Riskuppfattning av COVID-19
 
 ```{r canadaq_1, fig.width=12, fig.height=9}
 
 ```
+
+## Oro för COVID-19
 
 ```{r finitepool_1, fig.width=12, fig.height=16}
 
@@ -78,15 +84,19 @@ Detta dokument visualiserar resultaten från den internationella [undersökninge
 
 ```
 
+## Direkta och personliga effekter
+
 ```{r personal_1, fig.width=12, fig.height=16}
 
 ```
+
+## Direkta effekter på vänner och familj
 
 ```{r friends_1, fig.width=12, fig.height=16}
 
 ```
 
-## Medieexponering och förtroende
+## Använding och tilltro till information
 
 ```{r mediaexp_1, fig.width=12, fig.height=16}
 
@@ -96,7 +106,7 @@ Detta dokument visualiserar resultaten från den internationella [undersökninge
 
 ```
 
-## Personlig utredning och åtgärder
+## Förberedelser
 
 ```{r soughtinfo_1, fig.width=7, fig.height=4}
 
@@ -106,7 +116,7 @@ Detta dokument visualiserar resultaten från den internationella [undersökninge
 
 ```
 
-## Regeringens åtgärder
+## Nationella åtgärder
 
 ```{r govresponse_1, fig.width=12, fig.height=18}
 
@@ -116,7 +126,7 @@ Detta dokument visualiserar resultaten från den internationella [undersökninge
 
 ```
 
-## Vetenskapsförståelse
+## Vetenskaplig kunskap
 
 ```{r sciunderstand_1, fig.width=7, fig.height=4}
 
@@ -126,6 +136,8 @@ Detta dokument visualiserar resultaten från den internationella [undersökninge
 
 ```
 
-```{r sciunderstand_3, fig.width=12, fig.height=5}
+## Vaccin
+
+```{r vaccine_1, fig.width=12, fig.height=5}
 
 ```
