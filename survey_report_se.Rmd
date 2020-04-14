@@ -4,7 +4,6 @@ author: "UnEviL Research Group, Lund University"
 date: "12/04/2020"
 output: 
   html_document: 
-    code_folding: hide
     theme: paper
     toc: yes
     toc_float: yes
