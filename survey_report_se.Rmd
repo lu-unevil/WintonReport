@@ -1,0 +1,131 @@
+---
+title: "Visualisering av undersökningen Riskuppfattning av COVID-19/koronavirus"
+author: "UnEviL Research Group, Lund University"
+date: "12/04/2020"
+output: 
+  html_document: 
+    code_folding: hide
+    theme: paper
+    toc: yes
+    toc_float: yes
+---
+
+```{r setup, include=FALSE}
+lang <- "se"
+knitr::opts_chunk$set(echo=FALSE, message=FALSE, error=FALSE, warning=FALSE, tidy=TRUE, tidy.opts=list(comment=FALSE))
+knitr::read_chunk('survey_chunks.R')
+```
+
+## Introduktion
+
+Detta dokument visualiserar resultaten från den internationella [undersökningen av Winton Center for Risk and Evidence Communication](https://www.cam.ac.uk/stories/wintoncovid1) om människors inställning till risken för koronavirus och deras regeringars reaktioner..
+
+```{r prepare_data}
+
+```
+
+
+```{r service_functions}
+
+```
+
+## Tillit
+
+```{r trust_1, fig.width=7, fig.height=4}
+
+```
+
+
+```{r trust_2, fig.width=12, fig.height=24}
+
+```
+
+## COVID-19 erfarenhet
+
+```{r covid_1, fig.width=12, fig.height=12}
+
+```
+
+```{r covid_2, fig.width=12, fig.height=8}
+
+```
+
+```{r sars_1, fig.width=7, fig.height=4}
+
+```
+
+## Kulturell uppfattning
+
+```{r cultcog_1, fig.width=12, fig.height=12}
+
+```
+
+```{r prosocial_1, fig.width=7, fig.height=4}
+
+```
+
+## Personliga inställning
+
+```{r canadaq_1, fig.width=12, fig.height=9}
+
+```
+
+```{r finitepool_1, fig.width=12, fig.height=16}
+
+```
+
+```{r longitude_1, fig.width=12, fig.height=8}
+
+```
+
+```{r personal_1, fig.width=12, fig.height=16}
+
+```
+
+```{r friends_1, fig.width=12, fig.height=16}
+
+```
+
+## Medieexponering och förtroende
+
+```{r mediaexp_1, fig.width=12, fig.height=16}
+
+```
+
+```{r mediaexp_2, fig.width=12, fig.height=16}
+
+```
+
+## Personlig utredning och åtgärder
+
+```{r soughtinfo_1, fig.width=7, fig.height=4}
+
+```
+
+```{r prep_1,  fig.width=7, fig.height=4}
+
+```
+
+## Regeringens åtgärder
+
+```{r govresponse_1, fig.width=12, fig.height=18}
+
+```
+
+```{r govresponse_2, fig.width=12, fig.height=8}
+
+```
+
+## Vetenskapsförståelse
+
+```{r sciunderstand_1, fig.width=7, fig.height=4}
+
+```
+
+```{r sciunderstand_2, fig.width=12, fig.height=5}
+
+```
+
+```{r sciunderstand_3, fig.width=12, fig.height=5}
+
+```

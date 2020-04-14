@@ -1,11 +1,7 @@
-render_report = function(filename, lng) {
-  rmarkdown::render(
-    filename, params = list(
-      lng = lng
-    ),
-    output_file = paste0("docs/WintonReport-", lng, ".html")
-  )
-}
 
-render_report("survey_report.Rmd", "se")
-render_report("survey_report.Rmd", "en")
+rmarkdown::render("survey_report_se.Rmd", 
+                  output_file = "docs/WintonReport-se.html")
+
+rmarkdown::render("survey_report_en.Rmd", 
+                  output_file = "docs/WintonReport-en.html")
+

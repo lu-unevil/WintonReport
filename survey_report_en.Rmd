@@ -1,0 +1,131 @@
+---
+title: "Visualization of survey Risk perception of COVID-19/coronavirus"
+author: "UnEviL Research Group, Lund University"
+date: "12/04/2020"
+output: 
+  html_document: 
+    code_folding: hide
+    theme: paper
+    toc: yes
+    toc_float: yes
+---
+
+```{r setup, include=FALSE}
+lang <- "en"
+knitr::opts_chunk$set(echo=FALSE, message=FALSE, error=FALSE, warning=FALSE, tidy=TRUE, tidy.opts=list(comment=FALSE))
+knitr::read_chunk('survey_chunks.R')
+```
+
+## Introduction
+
+This document visualizes results of the international [survey by Winton Centre for Risk and Evidence Communication](https://www.cam.ac.uk/stories/wintoncovid1) about people's attitudes towards the risk of coronavirus, and their governments’ reactions.
+
+```{r prepare_data}
+
+```
+
+
+```{r service_functions}
+
+```
+
+## Trust
+
+```{r trust_1, fig.width=7, fig.height=4}
+
+```
+
+
+```{r trust_2, fig.width=12, fig.height=24}
+
+```
+
+## COVID-19 Experience
+
+```{r covid_1, fig.width=12, fig.height=12}
+
+```
+
+```{r covid_2, fig.width=12, fig.height=8}
+
+```
+
+```{r sars_1, fig.width=7, fig.height=4}
+
+```
+
+## Cultural perception
+
+```{r cultcog_1, fig.width=12, fig.height=12}
+
+```
+
+```{r prosocial_1, fig.width=7, fig.height=4}
+
+```
+
+## Personal attitudes
+
+```{r canadaq_1, fig.width=12, fig.height=9}
+
+```
+
+```{r finitepool_1, fig.width=12, fig.height=16}
+
+```
+
+```{r longitude_1, fig.width=12, fig.height=8}
+
+```
+
+```{r personal_1, fig.width=12, fig.height=16}
+
+```
+
+```{r friends_1, fig.width=12, fig.height=16}
+
+```
+
+## Media exposure and trust
+
+```{r mediaexp_1, fig.width=12, fig.height=16}
+
+```
+
+```{r mediaexp_2, fig.width=12, fig.height=16}
+
+```
+
+## Personal investigation and actions
+
+```{r soughtinfo_1, fig.width=7, fig.height=4}
+
+```
+
+```{r prep_1,  fig.width=7, fig.height=4}
+
+```
+
+## Government response
+
+```{r govresponse_1, fig.width=12, fig.height=18}
+
+```
+
+```{r govresponse_2, fig.width=12, fig.height=8}
+
+```
+
+## Science understanding
+
+```{r sciunderstand_1, fig.width=7, fig.height=4}
+
+```
+
+```{r sciunderstand_2, fig.width=12, fig.height=5}
+
+```
+
+```{r sciunderstand_3, fig.width=12, fig.height=5}
+
+```
