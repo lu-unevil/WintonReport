@@ -5,3 +5,6 @@ rmarkdown::render("survey_report_se.Rmd",
 rmarkdown::render("survey_report_en.Rmd", 
                   output_file = "docs/WintonReport-en.html")
 
+rmarkdown::render("bnt.Rmd", 
+                  output_file = "docs/WintonBNT.html")
+
