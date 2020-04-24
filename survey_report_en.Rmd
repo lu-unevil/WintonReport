@@ -30,78 +30,78 @@ Data were collected in the period 19 - 29th of March 2020.
 
 ## Trust
 
-```{r trust_1, fig.width=7, fig.height=4}
+```{r trust_1, fig.width=7, fig.height=5}
 
 ```
 
 
-```{r trust_2, fig.width=12, fig.height=24}
+```{r trust_2, fig.width=12, fig.height=28}
 
 ```
 
 ## Experience of COVID-19
 
-```{r covid_1, fig.width=12, fig.height=12}
+```{r covid_1, fig.width=12, fig.height=14}
 
 ```
 
 ## Effects from COVID-19
 
-```{r covid_2, fig.width=12, fig.height=8}
+```{r covid_2, fig.width=12, fig.height=9}
 
 ```
 
 ## Experiences of similar diseases
 
-```{r sars_1, fig.width=7, fig.height=4}
+```{r sars_1, fig.width=7, fig.height=5}
 
 ```
 
 ## Cultural perception
 
-```{r cultcog_1, fig.width=12, fig.height=12}
+```{r cultcog_1, fig.width=12, fig.height=14}
 
 ```
 
-```{r prosocial_1, fig.width=7, fig.height=4}
+```{r prosocial_1, fig.width=7, fig.height=5}
 
 ```
 
 ## Risk perception of COVID-19
 
-```{r canadaq_1, fig.width=12, fig.height=9}
+```{r canadaq_1, fig.width=12, fig.height=10}
 
 ```
 
 ## Worry of COVID-19
 
-```{r finitepool_1, fig.width=12, fig.height=16}
+```{r finitepool_1, fig.width=12, fig.height=18}
 
 ```
 
-```{r longitude_1, fig.width=12, fig.height=8}
+```{r longitude_1, fig.width=12, fig.height=9}
 
 ```
 
 ## Direct and personal effects
 
-```{r personal_1, fig.width=12, fig.height=16}
+```{r personal_1, fig.width=12, fig.height=18}
 
 ```
 
 ## Direct effects on friends and family
 
-```{r friends_1, fig.width=12, fig.height=16}
+```{r friends_1, fig.width=12, fig.height=18}
 
 ```
 
 ## Use and trust in information
 
-```{r mediaexp_1, fig.width=12, fig.height=16}
+```{r mediaexp_1, fig.width=12, fig.height=18}
 
 ```
 
-```{r mediaexp_2, fig.width=12, fig.height=16}
+```{r mediaexp_2, fig.width=12, fig.height=18}
 
 ```
 
@@ -111,23 +111,23 @@ Data were collected in the period 19 - 29th of March 2020.
 
 ```
 
-```{r prep_1,  fig.width=7, fig.height=4}
+```{r prep_1,  fig.width=7, fig.height=5}
 
 ```
 
 ## Governmental response
 
-```{r govresponse_1, fig.width=12, fig.height=18}
+```{r govresponse_1, fig.width=12, fig.height=20}
 
 ```
 
-```{r govresponse_2, fig.width=12, fig.height=8}
+```{r govresponse_2, fig.width=12, fig.height=9}
 
 ```
 
 ## Scientific knowledge
 
-```{r sciunderstand_1, fig.width=7, fig.height=4}
+```{r sciunderstand_1, fig.width=7, fig.height=5}
 
 ```
 

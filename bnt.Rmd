@@ -11,7 +11,7 @@ output:
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE, error = FALSE)
 ```
 
 ## R Markdown
@@ -21,7 +21,7 @@ The following presents results of Berlin Numeracy Test (BNT) conducted as part o
 
 ```{r import_data}
 library(tidyverse)
-dt <- read_csv("https://osf.io/xubqt/download")
+dt <- read_csv("data/WintonCentreCleaned_covid_11country_plusUK2_labelled.csv")
 
 qs <- c("Num1", "Num2a", "Num2b", "Num3")
 # Add "NumeracyQ1" separately
@@ -39,7 +39,7 @@ We are going to look at the four variables constituting BNT. This is adaptive te
 
 ```{r wrangle_data}
 q_df <- dt %>% 
-  slice(1:2) %>% 
+  slice(1:2) %>% select(-version) %>% 
   tibble::rowid_to_column() %>% 
   pivot_longer(-rowid, names_to = "var", 
                values_to = "txt_en") %>% 
@@ -47,7 +47,7 @@ q_df <- dt %>%
   select(-rowid)
 
 data_lng_df <- dt %>% 
-  slice(-1:-3) %>% 
+  slice(-1:-3) %>% select(-version) %>% 
   tibble::rowid_to_column() %>% 
   pivot_longer(cols = GenSocTrust:Politics, 
                names_to = "var", values_to = "code") %>% 

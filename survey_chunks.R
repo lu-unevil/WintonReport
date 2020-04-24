@@ -5,7 +5,8 @@ library(hrbrthemes)
 #remotes::install_github("hadley/emo")
 library(emo)
 
-dt <- read_csv("data/WintonCentreCleaned_covid_8country_labelled.csv") 
+#dt <- read_csv("data/WintonCentreCleaned_covid_8country_labelled.csv")
+dt <- read_csv("data/WintonCentreCleaned_covid_11country_plusUK2_labelled.csv")
 
 # Make a small df with codes corresponding to missing values
 msng_df <- tibble::tribble(~var, ~code, ~msng,
@@ -18,10 +19,13 @@ country_df <- tibble::tribble( ~Residency, ~ji_name, ~countryname_en, ~countryna
                                "AU", "australia", "Australia", "Australien",
                                "DE", "de", "Germany", "Tyskland",
                                "ES", "es", "Spain", "Spanien",
-                               "GB", "gb", "UK", "Storbritannien",
+                               "UK", "gb", "UK", "Storbritannien",
                                "IT", "it", "Italy", "Italien",
                                "MX", "mexico","Mexico", "Mexico",
                                "SE", "sweden", "Sweden", "Sverige",
+                               "KR", "kr", "South Korea", "Sydkorea",
+                               "JP", "jp", "Japan", "Japan",
+                               "CN", "cn", "China", "Kina",
                                "US", "us", "USA", "USA" )
 
 country_df <- country_df %>% 
@@ -39,7 +43,7 @@ wrap_txt <- function(x, w=80){
 }
 
 # Prepare labels for annotating plots
-q_df_raw <- dt %>% slice(1:2) %>% 
+q_df_raw <- dt %>% slice(1:3) %>% select(-version) %>% 
   tibble::rowid_to_column(var = "row_id") %>% 
   pivot_longer(-row_id, names_to = "var", values_to = "txt_en") %>% 
   arrange(var, row_id)
@@ -54,7 +58,7 @@ q_df <- q_df %>%
   select(-language) %>% 
   replace_na(list(question=""))
 
-lbl_df_raw <- dt %>% slice(3) %>% 
+lbl_df_raw <- dt %>% slice(4) %>% select(-version) %>% 
   map(str_replace, " to (?=\\d)| - (?=\\d)", ", ") %>% 
   map(str_replace_all, "(?<=\\d\\s)\\(", " = ") %>% 
   map_df(~enframe(str_split(.x, ",\\s+(?=\\d)")[[1]] ), .id = "var") %>%
@@ -77,8 +81,7 @@ lbl_df <- lbl_df %>%
 
 # Prepare data
 df_lng_raw <- dt %>% 
-  slice(-1:-3) %>% 
-  mutate(Residency=ifelse(Residency=="UK", "GB", Residency)) %>% 
+  slice(-1:-4) %>% 
   tibble::rowid_to_column() %>% 
   pivot_longer(cols = GenSocTrust:Politics, names_to = "var", values_to = "code") %>% 
   left_join(msng_df, by=c("var", "code")) %>% 
@@ -235,9 +238,6 @@ plot_categorical <- function(var_name, q_dfa=q_df, lbl_dfa=lbl_df, data_dfa=data
     geom_col(mapping=aes(x=pct), fill=clrs, show.legend = FALSE)+
     facet_wrap(vars(paste(countryflag, countryname)), ncol = 2)+
     theme_ipsum_rc(grid = FALSE)+
-    # scale_fill_manual(values=clrs)+
-    #scale_colour_brewer(palette = "Dark2")+
-    #scale_fill_brewer(palette = "Dark2")+
     scale_x_continuous(labels = scales::percent, limits=c(0,1))+
     labs(title=with(q_var_df, question[row_id==1]),
          subtitle = with(q_var_df, question[row_id==2]),           
