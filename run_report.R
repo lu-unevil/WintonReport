@@ -8,3 +8,6 @@ rmarkdown::render("survey_report_en.Rmd",
 rmarkdown::render("bnt.Rmd", 
                   output_file = "docs/WintonBNT.html")
 
+rmarkdown::render("survey_reportSE2_se.Rmd", 
+                  output_file = "docs/WintonReportSE2-se.html")
+
