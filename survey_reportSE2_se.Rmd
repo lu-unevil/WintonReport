@@ -1,5 +1,5 @@
 ---
-title: "Riskuppfattning av COVID-19/coronaviruset"  
+title: "Riskuppfattning av COVID-19/coronaviruset i Sverige"  
 author: "[Osäkerhet och evidenslabbet](https://www.cec.lu.se/research/unevil)  \nLunds Universitet"
 date: "26/04/2020"
 output: 
@@ -17,7 +17,7 @@ lang <- "se"
 
 ## Introduktion
 
-Detta dokument jämför resultaten av den svenska versionen av [undersökningen av Winton Center for Risk and Evidence Communication] (https://www.cam.ac.uk/stories/wintoncovid1) om människors inställning till risken för koronavirus och deras De svenska regeringarnas reaktion i mars och i april 2020. Marsuppgifterna samlades in under perioden 28 - 29 mars 2020 och april-datainsamlingen genomfördes den 19-24 april 2020.
+Detta dokument jämför resultaten av den svenska versionen av [undersökningen av Winton Center for Risk and Evidence Communication](https://www.cam.ac.uk/stories/wintoncovid1) om människors inställning till risken för koronavirus och deras De svenska regeringarnas reaktion i mars och i april 2020. Marsuppgifterna samlades in under perioden 28 - 29 mars 2020 och april-datainsamlingen genomfördes den 19-24 april 2020.
 
 
 ```{r}
