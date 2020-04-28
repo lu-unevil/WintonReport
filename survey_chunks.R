@@ -134,7 +134,7 @@ plot_single <- function(var_name, q_dfa=q_df, lbl_dfa=lbl_df, data_dfa=data_df){
   df_plot %>%
     filter(!is.na(code)) %>% 
     ggplot(mapping=aes(y=fct_rev(countryflag)))+
-    geom_col(mapping=aes(x=pct, fill=(code)),
+    geom_col(mapping=aes(x=nna_pct, fill=(code)),
              position = "fill") +
     geom_text(data=lbl_var_df,
               aes(x=x01, y=Inf, color=I(clr), label=label),
@@ -188,7 +188,7 @@ plot_group <- function(var_group_name, q_dfa=q_df, lbl_dfa=lbl_df, data_dfa=data
     filter(!is.na(code)) %>% 
     mutate(question=map_chr(question, wrap_txt, 75)) %>% 
     ggplot(mapping=aes(y=fct_rev(countryflag)))+
-    geom_col(mapping=aes(x=pct, fill=code),
+    geom_col(mapping=aes(x=nna_pct, fill=code),
              position = "fill") +
     geom_text(data=lbl_var_df,
               aes(x=x01, y=0.4, color=I(clr), label=label),
@@ -235,7 +235,7 @@ plot_categorical <- function(var_name, q_dfa=q_df, lbl_dfa=lbl_df, data_dfa=data
     filter(!is.na(code)) %>%
     left_join(lbl_var_df, by="code") %>% 
     ggplot(mapping=aes(y=fct_rev(label)))+
-    geom_col(mapping=aes(x=pct), fill=clrs, show.legend = FALSE)+
+    geom_col(mapping=aes(x=nna_pct), fill=clrs, show.legend = FALSE)+
     facet_wrap(vars(paste(countryflag, countryname)), ncol = 2)+
     theme_ipsum_rc(grid = FALSE)+
     scale_x_continuous(labels = scales::percent, limits=c(0,1))+
@@ -267,7 +267,7 @@ plot_binary <- function(var_name, q_dfa=q_df, lbl_dfa=lbl_df, data_dfa=data_df){
   df_plot %>%
     filter(!is.na(code)) %>% 
     ggplot(mapping=aes(y=fct_rev(countryflag)))+
-    geom_col(mapping=aes(x=pct, fill=(code))) +
+    geom_col(mapping=aes(x=nna_pct, fill=(code))) +
     geom_text(data=lbl_var_df,
               aes(x=0, y=Inf, color=I(clr), label=label),
               family="Roboto Condensed",
@@ -318,7 +318,7 @@ plot_binary_group <- function(var_group_name, q_dfa=q_df, lbl_dfa=lbl_df, data_d
     filter(!is.na(code)) %>% 
     mutate(question=map_chr(question, wrap_txt, 75)) %>% 
     ggplot(mapping=aes(y=fct_rev(countryflag)))+
-    geom_col(mapping=aes(x=pct, fill=code)) +
+    geom_col(mapping=aes(x=nna_pct, fill=code)) +
     geom_text(data=lbl_var_df,
               aes(x=0, y=0.4, color=I(clr), label=label),
               family="Roboto Condensed",
