@@ -1,7 +1,7 @@
 ---
 title: "Riskuppfattning av COVID-19/coronaviruset i Sverige"  
 author: "[Osäkerhets- och evidenslabbet](https://www.cec.lu.se/research/unevil)  \nLunds Universitet"
-date: "26/04/2020"
+date: "29/04/2020"
 output: 
   html_document: 
     theme: paper
@@ -18,7 +18,11 @@ lang <- "se"
 ## Introduktion
 
 Detta dokument jämför resultaten av en internationell undersökning utförd av [undersökningen av Winton Center for Risk and Evidence Communication](https://www.cam.ac.uk/stories/wintoncovid1) om riskuppfattning och syn på hantering av coronaviruset. Den svenska delen av undersökningen gjordes under perioden 28 - 29 mars 2020 och 19-24 april 2020. Vid varje omgång har 700 svar från ett representativt urval av svenska befolkningen svarat på undersökningen genom systemt Qualitrics. 
-Vi presenterar här resultaten från de två tillfällena så att det är möjligt att jämföra. Generellt sett är det ingen stor skillnad mellan svaren från april jämfört med mars. Just nu arbetar forskare med analys av detta material. Data är offentlig för att göra det möjligt för beslutsfattare att bilda sig en uppfattning om hur vi upplever COVID-19. Vi har gjort en liknande [översikt av publika data i samma studie från flera länder] (https://lu-unevil.github.io/WintonReport/WintonReport-en.html).
+
+Vi presenterar här resultaten från de två tillfällena på ett sätt som gör det möjligt att jämföra. Generellt sett är det ingen stor skillnad mellan svaren från april jämfört med mars. Just nu arbetar forskare med analys av detta material.
+
+Data är offentlig för att göra det möjligt för beslutsfattare att bilda sig en uppfattning om hur vi upplever COVID-19. Vi har gjort en liknande [översikt av publika data i samma studie från flera länder] (https://lu-unevil.github.io/WintonReport/WintonReport-en.html).
+
 Kontakt: Ullrika Sahlin, Lunds Universitet
 
 
@@ -398,6 +402,17 @@ plot_group_batch("Longitude")
 plot_group_batch("FinitePool")
 ```
 
+## Riskuppfattning av COVID-19 jämfört med andra frågor - direkta och personliga effekter
+
+```{r personal_1, fig.width=12, fig.height=9}
+plot_group_batch("Personal")
+```
+
+## Riskuppfattning av COVID-19 jämfört med andra frågor - direkta effekter på vänner och familj
+
+```{r friends_1, fig.width=12, fig.height=9}
+plot_group_batch("Friends")
+```
 
 ## Syn på vaccin för COVID-19
 
@@ -405,15 +420,6 @@ plot_group_batch("FinitePool")
 plot_binary_group_batch("Vaccine")
 ```
 
-## Erfarenheter av COVID-19 eller liknande sjukdomar
-
-```{r covid_1, fig.width=12, fig.height=5}
-plot_categorical_batch("COVIDexp")
-```
- 
-```{r sars_1, fig.width=7, fig.height=3}
-plot_binary_batch("SARS")
-```
 
 ## Sökt information om COVID-19
 
@@ -457,18 +463,6 @@ plot_group_batch("Govrestrict")
 ```
 
 
-## Riskuppfattning av COVID-19 jämfört med andra frågor - direkta och personliga effekter
-
-```{r personal_1, fig.width=12, fig.height=9}
-plot_group_batch("Personal")
-```
-
-## Riskuppfattning av COVID-19 jämfört med andra frågor - direkta effekter på vänner och familj
-
-```{r friends_1, fig.width=12, fig.height=9}
-plot_group_batch("Friends")
-```
-
 ## Förtroende för individer och samhället
 
 ```{r trust_1, fig.width=7, fig.height=3}
@@ -479,8 +473,18 @@ plot_single_batch("GenSocTrust")
 plot_group_batch("Trustingroups")
 ```
 
+## Erfarenheter av COVID-19 eller liknande sjukdomar
 
-## Syn på invidid och samhälle
+```{r covid_1, fig.width=12, fig.height=5}
+plot_categorical_batch("COVIDexp")
+```
+ 
+```{r sars_1, fig.width=7, fig.height=3}
+plot_binary_batch("SARS")
+```
+
+
+## Syn på individ och samhälle
 
 ```{r cultcog_1, fig.width=12, fig.height=9}
 plot_group_batch("CultCog")
