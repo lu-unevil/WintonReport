@@ -28,6 +28,7 @@ library(hrbrthemes)
 #remotes::install_github("hadley/emo")
 library(emo)
 library(readxl)
+library(details)
 
 #dt <- read_csv("data/WintonCentreCleaned_covid_8country_labelled.csv")
 dt <- read_csv("data/WintonCentreCleaned_covid_11country_plusUK2_labelled.csv")
@@ -144,6 +145,25 @@ data_df <- df_lng_raw %>%
 ```
 
 ```{r service_functions}
+# Function to produce Wilcox pairwise test
+wilcox_details <- function(var_group_name, df_lng_rw=df_lng_raw, q_dfa=q_df){ 
+    q_var_df <- q_dfa %>% 
+    filter(var_group==var_group_name, row_id==2) %>% 
+    select(var, question)
+  
+ df_lng_rw %>% 
+  right_join(q_var_df, by="var")%>% 
+  mutate(code=ifelse(msng, NA, code),
+         code_num = parse_number(code)
+         ) %>% 
+  select(var, question, code_num, version) %>% 
+  group_by(var, question) %>% 
+  group_modify(~broom::tidy(
+    wilcox.test(code_num ~ version, data=.x, altenative="two-sided")),
+    keep = TRUE) %>% 
+   ungroup() %>% 
+   select(-var)
+}
 
 # Service function for single questions
 plot_single_batch <- function(var_name, q_dfa=q_df, lbl_dfa=lbl_df, data_dfa=data_df){
@@ -384,6 +404,10 @@ plot_group_batch("COVIDeffect")
 
 ```{r canadaq_1, fig.width=12, fig.height=5}
 plot_group_batch("CanadaQ")
+```
+
+```{details, echo=FALSE, lang="md", details.summary='Wilcox test'}
+wilcox_details("CanadaQ")
 ```
 
 ## Oro för COVID-19
