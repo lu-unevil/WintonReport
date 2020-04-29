@@ -1,6 +1,6 @@
 ---
 title: "Riskuppfattning av COVID-19/coronaviruset i Sverige"  
-author: "[Osäkerhet och evidenslabbet](https://www.cec.lu.se/research/unevil)  \nLunds Universitet"
+author: "[Osäkerhets- och evidenslabbet](https://www.cec.lu.se/research/unevil)  \nLunds Universitet"
 date: "26/04/2020"
 output: 
   html_document: 
@@ -17,7 +17,9 @@ lang <- "se"
 
 ## Introduktion
 
-Detta dokument jämför resultaten av den svenska versionen av [undersökningen av Winton Center for Risk and Evidence Communication](https://www.cam.ac.uk/stories/wintoncovid1) om människors inställning till risken för koronavirus och deras De svenska regeringarnas reaktion i mars och i april 2020. Marsuppgifterna samlades in under perioden 28 - 29 mars 2020 och april-datainsamlingen genomfördes den 19-24 april 2020.
+Detta dokument jämför resultaten av en internationell undersökning utförd av [undersökningen av Winton Center for Risk and Evidence Communication](https://www.cam.ac.uk/stories/wintoncovid1) om riskuppfattning och syn på hantering av coronaviruset. Den svenska delen av undersökningen gjordes under perioden 28 - 29 mars 2020 och 19-24 april 2020. Vid varje omgång har 700 svar från ett representativt urval av svenska befolkningen svarat på undersökningen genom systemt Qualitrics. 
+Vi presenterar här resultaten från de två tillfällena så att det är möjligt att jämföra. Generellt sett är det ingen stor skillnad mellan svaren från april jämfört med mars. Just nu arbetar forskare med analys av detta material. Data är offentlig för att göra det möjligt för beslutsfattare att bilda sig en uppfattning om hur vi upplever COVID-19. Vi har gjort en liknande [översikt av publika data i samma studie från flera länder] (https://lu-unevil.github.io/WintonReport/WintonReport-en.html).
+Kontakt: Ullrika Sahlin, Lunds Universitet
 
 
 ```{r}
@@ -372,46 +374,13 @@ plot_binary_group_batch <- function(var_group_name, q_dfa=q_df, lbl_dfa=lbl_df, 
 ##########  END  ############
 ```
 
-## Förtroende
-
-```{r trust_1, fig.width=7, fig.height=3}
-plot_single_batch("GenSocTrust")
-```
-
-
-```{r trust_2, fig.width=12, fig.height=12}
-plot_group_batch("Trustingroups")
-```
-
-## Erfarenheter av COVID-19
-
-```{r covid_1, fig.width=12, fig.height=5}
-plot_categorical_batch("COVIDexp")
-```
-
-## Effekter av COVID-19
+## Uppfattning av effekter av COVID-19
 
 ```{r covid_2, fig.width=12, fig.height=5}
 plot_group_batch("COVIDeffect")
 ```
 
-## Erfarenheter av liknande sjukdomar
-
-```{r sars_1, fig.width=7, fig.height=3}
-plot_binary_batch("SARS")
-```
-
-## Kulturell uppfattning
-
-```{r cultcog_1, fig.width=12, fig.height=9}
-plot_group_batch("CultCog")
-```
-
-```{r prosocial_1, fig.width=7, fig.height=3}
-plot_single_batch("prosocial")
-```
-
-## Riskuppfattning av COVID-19
+## Uppfattning av risker med COVID-19
 
 ```{r canadaq_1, fig.width=12, fig.height=5}
 plot_group_batch("CanadaQ")
@@ -419,57 +388,50 @@ plot_group_batch("CanadaQ")
 
 ## Oro för COVID-19
 
-```{r finitepool_1, fig.width=12, fig.height=9}
-plot_group_batch("FinitePool")
-```
-
 ```{r longitude_1, fig.width=12, fig.height=5}
 plot_group_batch("Longitude")
 ```
 
-## Direkta och personliga effekter
+## Oro för COVID-19 jämfört med andra frågor
 
-```{r personal_1, fig.width=12, fig.height=9}
-plot_group_batch("Personal")
+```{r finitepool_1, fig.width=12, fig.height=9}
+plot_group_batch("FinitePool")
 ```
 
-## Direkta effekter på vänner och familj
 
-```{r friends_1, fig.width=12, fig.height=9}
-plot_group_batch("Friends")
+## Syn på vaccin för COVID-19
+
+```{r vaccine_1, fig.width=12, fig.height=3}
+plot_binary_group_batch("Vaccine")
 ```
 
-## Använding och tilltro till information
+## Erfarenheter av COVID-19 eller liknande sjukdomar
 
-```{r mediaexp_1, fig.width=12, fig.height=9}
-plot_binary_group_batch("MediaExp")
+```{r covid_1, fig.width=12, fig.height=5}
+plot_categorical_batch("COVIDexp")
+```
+ 
+```{r sars_1, fig.width=7, fig.height=3}
+plot_binary_batch("SARS")
 ```
 
-```{r mediaexp_2, fig.width=12, fig.height=9}
-plot_group_batch("MediaTrust")
-```
-
-## Förberedelser
+## Sökt information om COVID-19
 
 ```{r soughtinfo_1, fig.width=7, fig.height=3}
 plot_binary_batch("Soughtinfo")
 ```
 
-```{r prep_1,  fig.width=7, fig.height=3}
-## Prep code will come here
+```{r mediaexp_1, fig.width=12, fig.height=9}
+plot_binary_group_batch("MediaExp")
 ```
 
-## Nationella åtgärder
+## Tilltro till information om COVID-19
 
-```{r govresponse_1, fig.width=12, fig.height=12}
-plot_group_batch("Govresponse")
+```{r mediaexp_2, fig.width=12, fig.height=9}
+plot_group_batch("MediaTrust")
 ```
 
-```{r govresponse_2, fig.width=12, fig.height=5}
-plot_group_batch("Govrestrict")
-```
-
-## Vetenskaplig kunskap
+## Syn på vetenskaplig kunskap om COVID-19
 
 ```{r sciunderstand_1, fig.width=7, fig.height=3}
 plot_single_batch("Sciunderstand")
@@ -479,8 +441,51 @@ plot_single_batch("Sciunderstand")
 plot_group_batch("KnowledgeCert")
 ```
 
-## Vaccin
+```{r prep_1,  fig.width=7, fig.height=3}
+## Prep code will come here
+```
 
-```{r vaccine_1, fig.width=12, fig.height=3}
-plot_binary_group_batch("Vaccine")
+
+## Syn på nationella åtgärder
+
+```{r govresponse_1, fig.width=12, fig.height=12}
+plot_group_batch("Govresponse")
+```
+
+```{r govresponse_2, fig.width=12, fig.height=5}
+plot_group_batch("Govrestrict")
+```
+
+
+## Riskuppfattning av COVID-19 jämfört med andra frågor - direkta och personliga effekter
+
+```{r personal_1, fig.width=12, fig.height=9}
+plot_group_batch("Personal")
+```
+
+## Riskuppfattning av COVID-19 jämfört med andra frågor - direkta effekter på vänner och familj
+
+```{r friends_1, fig.width=12, fig.height=9}
+plot_group_batch("Friends")
+```
+
+## Förtroende för individer och samhället
+
+```{r trust_1, fig.width=7, fig.height=3}
+plot_single_batch("GenSocTrust")
+```
+
+```{r trust_2, fig.width=12, fig.height=12}
+plot_group_batch("Trustingroups")
+```
+
+
+## Syn på invidid och samhälle
+
+```{r cultcog_1, fig.width=12, fig.height=9}
+plot_group_batch("CultCog")
+```
+
+```{r prosocial_1, fig.width=7, fig.height=3}
+plot_single_batch("prosocial")
 ```

@@ -18,7 +18,8 @@ knitr::read_chunk('survey_chunks.R')
 ## Introduction
 
 This document visualizes results of the international [survey by Winton Centre for Risk and Evidence Communication](https://www.cam.ac.uk/stories/wintoncovid1) about people's attitudes towards the risk of coronavirus, and their governments’ reactions.
-Data were collected in the period 19 - 29th of March 2020. 
+
+Data were collected during March and April 2020. 
 ```{r prepare_data}
 
 ```
@@ -28,104 +29,64 @@ Data were collected in the period 19 - 29th of March 2020.
 
 ```
 
-## Trust
-
-```{r trust_1, fig.width=7, fig.height=5}
-
-```
-
-
-```{r trust_2, fig.width=12, fig.height=28}
-
-```
-
-## Experience of COVID-19
-
-```{r covid_1, fig.width=12, fig.height=14}
-
-```
-
-## Effects from COVID-19
+## Percieved effects from COVID-19
 
 ```{r covid_2, fig.width=12, fig.height=9}
 
 ```
 
-## Experiences of similar diseases
-
-```{r sars_1, fig.width=7, fig.height=5}
-
-```
-
-## Cultural perception
-
-```{r cultcog_1, fig.width=12, fig.height=14}
-
-```
-
-```{r prosocial_1, fig.width=7, fig.height=5}
-
-```
-
-## Risk perception of COVID-19
+## Percieved risk of COVID-19 
 
 ```{r canadaq_1, fig.width=12, fig.height=10}
 
 ```
 
-## Worry of COVID-19
-
-```{r finitepool_1, fig.width=12, fig.height=18}
-
-```
+## Worry about COVID-19
 
 ```{r longitude_1, fig.width=12, fig.height=9}
 
 ```
 
-## Direct and personal effects
+## Worry about COVID-19 compared to other issues
+
+```{r finitepool_1, fig.width=12, fig.height=18}
+
+```
+
+## Riskperception of COVID-19 jämfört med andra frågor - direkta och personliga effekter
 
 ```{r personal_1, fig.width=12, fig.height=18}
 
 ```
 
-## Direct effects on friends and family
+## Riskuppfattning av COVID-19 jämfört med andra frågor - direkta effekter på vänner och familj
 
 ```{r friends_1, fig.width=12, fig.height=18}
 
 ```
 
-## Use and trust in information
+## View on vaccination for COVID-19
 
-```{r mediaexp_1, fig.width=12, fig.height=18}
-
-```
-
-```{r mediaexp_2, fig.width=12, fig.height=18}
+```{r vaccine_1, fig.width=12, fig.height=5}
 
 ```
 
-## Preparedness
+## Information about COVID-19
 
 ```{r soughtinfo_1, fig.width=7, fig.height=4}
 
 ```
 
-```{r prep_1,  fig.width=7, fig.height=5}
+```{r mediaexp_1, fig.width=12, fig.height=18}
 
 ```
 
-## Governmental response
-
-```{r govresponse_1, fig.width=12, fig.height=20}
-
-```
-
-```{r govresponse_2, fig.width=12, fig.height=9}
+## Trust in information about COVID-19
+```{r mediaexp_2, fig.width=12, fig.height=18}
 
 ```
 
-## Scientific knowledge
+## View on scientific knowledge about COVID-19
 
 ```{r sciunderstand_1, fig.width=7, fig.height=5}
 
@@ -135,8 +96,47 @@ Data were collected in the period 19 - 29th of March 2020.
 
 ```
 
-## Vaccine
+## View on govermental responses
 
-```{r vaccine_1, fig.width=12, fig.height=5}
+```{r govresponse_1, fig.width=12, fig.height=20}
 
 ```
+
+```{r govresponse_2, fig.width=12, fig.height=9}
+
+```
+
+## Trust in individuals and society
+
+```{r trust_1, fig.width=7, fig.height=5}
+
+```
+
+```{r trust_2, fig.width=12, fig.height=28}
+
+```
+
+## View on individuals and society
+
+```{r cultcog_1, fig.width=12, fig.height=14}
+
+```
+
+```{r prosocial_1, fig.width=7, fig.height=5}
+
+```
+
+## Experiences of COVID-19 or similar diseases
+
+```{r covid_1, fig.width=12, fig.height=14}
+
+```
+
+```{r sars_1, fig.width=7, fig.height=5}
+
+```
+
+```{r prep_1,  fig.width=7, fig.height=5}
+
+```
+
