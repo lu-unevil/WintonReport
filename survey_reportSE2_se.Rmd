@@ -400,14 +400,20 @@ plot_binary_group_batch <- function(var_group_name, q_dfa=q_df, lbl_dfa=lbl_df, 
 plot_group_batch("COVIDeffect")
 ```
 
+```{r, echo=FALSE}
+details( knitr::kable(wilcox_details("COVIDeffect")), 
+        lang = NULL, summary = 'Wilcox test')
+```
+
 ## Uppfattning av risker med COVID-19
 
 ```{r canadaq_1, fig.width=12, fig.height=5}
 plot_group_batch("CanadaQ")
 ```
 
-```{details, echo=FALSE, lang="md", details.summary='Wilcox test'}
-wilcox_details("CanadaQ")
+```{r, echo=FALSE}
+details( knitr::kable(wilcox_details("CanadaQ")), 
+        lang = NULL, summary = 'Wilcox test')
 ```
 
 ## Oro för COVID-19
@@ -416,12 +422,21 @@ wilcox_details("CanadaQ")
 plot_group_batch("Longitude")
 ```
 
+```{r, echo=FALSE}
+details( knitr::kable(wilcox_details("Longitude")), 
+        lang = NULL, summary = 'Wilcox test')
+```
+
 ## Oro för COVID-19 jämfört med andra frågor
 
 ```{r finitepool_1, fig.width=12, fig.height=9}
 plot_group_batch("FinitePool")
 ```
 
+```{r, echo=FALSE}
+details( knitr::kable(wilcox_details("FinitePool")), 
+        lang = NULL, summary = 'Wilcox test')
+```
 
 ## Syn på vaccin för COVID-19
 
@@ -455,20 +470,34 @@ plot_binary_group_batch("MediaExp")
 plot_group_batch("MediaTrust")
 ```
 
+```{r, echo=FALSE}
+details( knitr::kable(wilcox_details("MediaTrust")), 
+        lang = NULL, summary = 'Wilcox test')
+```
+
 ## Syn på vetenskaplig kunskap om COVID-19
 
 ```{r sciunderstand_1, fig.width=7, fig.height=3}
 plot_single_batch("Sciunderstand")
 ```
 
+```{r, echo=FALSE}
+details( knitr::kable(wilcox_details("Sciunderstand")), 
+        lang = NULL, summary = 'Wilcox test')
+```
+
 ```{r sciunderstand_2, fig.width=12, fig.height=3}
 plot_group_batch("KnowledgeCert")
+```
+
+```{r, echo=FALSE}
+details( knitr::kable(wilcox_details("KnowledgeCert")), 
+        lang = NULL, summary = 'Wilcox test')
 ```
 
 ```{r prep_1,  fig.width=7, fig.height=3}
 ## Prep code will come here
 ```
-
 
 ## Syn på nationella åtgärder
 
@@ -476,15 +505,29 @@ plot_group_batch("KnowledgeCert")
 plot_group_batch("Govresponse")
 ```
 
+```{r, echo=FALSE}
+details( knitr::kable(wilcox_details("Govresponse")), 
+        lang = NULL, summary = 'Wilcox test')
+```
+
 ```{r govresponse_2, fig.width=12, fig.height=5}
 plot_group_batch("Govrestrict")
 ```
 
+```{r, echo=FALSE}
+details( knitr::kable(wilcox_details("Govrestrict")), 
+        lang = NULL, summary = 'Wilcox test')
+```
 
 ## Riskuppfattning av COVID-19 jämfört med andra frågor - direkta och personliga effekter
 
 ```{r personal_1, fig.width=12, fig.height=9}
 plot_group_batch("Personal")
+```
+
+```{r, echo=FALSE}
+details( knitr::kable(wilcox_details("Personal")), 
+        lang = NULL, summary = 'Wilcox test')
 ```
 
 ## Riskuppfattning av COVID-19 jämfört med andra frågor - direkta effekter på vänner och familj
@@ -493,16 +536,30 @@ plot_group_batch("Personal")
 plot_group_batch("Friends")
 ```
 
+```{r, echo=FALSE}
+details( knitr::kable(wilcox_details("Friends")), 
+        lang = NULL, summary = 'Wilcox test')
+```
+
 ## Förtroende för individer och samhället
 
 ```{r trust_1, fig.width=7, fig.height=3}
 plot_single_batch("GenSocTrust")
 ```
 
+```{r, echo=FALSE}
+details( knitr::kable(wilcox_details("GenSocTrust")), 
+        lang = NULL, summary = 'Wilcox test')
+```
+
 ```{r trust_2, fig.width=12, fig.height=12}
 plot_group_batch("Trustingroups")
 ```
 
+```{r, echo=FALSE}
+details( knitr::kable(wilcox_details("Trustingroups")), 
+        lang = NULL, summary = 'Wilcox test')
+```
 
 ## Syn på invidid och samhälle
 
@@ -510,6 +567,16 @@ plot_group_batch("Trustingroups")
 plot_group_batch("CultCog")
 ```
 
+```{r, echo=FALSE}
+details( knitr::kable(wilcox_details("CultCog")), 
+        lang = NULL, summary = 'Wilcox test')
+```
+
 ```{r prosocial_1, fig.width=7, fig.height=3}
 plot_single_batch("prosocial")
+```
+
+```{r, echo=FALSE}
+details( knitr::kable(wilcox_details("prosocial")), 
+        lang = NULL, summary = 'Wilcox test')
 ```
