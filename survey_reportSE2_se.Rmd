@@ -169,6 +169,24 @@ wilcox_details <- function(var_group_name, df_lng_rw=df_lng_raw, q_dfa=q_df){
    select(-var)
 }
 
+# Function to produce Wilcox pairwise test
+binary_details <- function(var_group_name, data_dfa=data_df, q_dfa=q_df){ 
+ q_var_df <- q_dfa %>% 
+    filter(var_group==var_group_name, row_id==2) %>% 
+    select(var, question)
+  
+ data_dfa %>% 
+  right_join(q_var_df, by="var")%>% 
+  filter(code_num==1) %>% 
+  select(var, n, pct, nna_n, nna_pct, question, code_num, version, batch) %>% 
+  group_by(var, question) %>% 
+  group_modify(~broom::tidy(
+    prop.test(x=.x$nna_n, n=(.x$nna_n)/(.x$nna_pct))),
+    keep = TRUE) %>% 
+   ungroup() %>% 
+   select(-var)
+}
+
 # Service function for single questions
 plot_single_batch <- function(var_name, q_dfa=q_df, lbl_dfa=lbl_df, data_dfa=data_df){
   lbl_var_df <- lbl_dfa %>%
@@ -471,6 +489,11 @@ details( knitr::kable(wilcox_details("Friends")),
 plot_binary_group_batch("Vaccine")
 ```
 
+```{r, echo=FALSE}
+details( knitr::kable(binary_details("Vaccine")), 
+        lang = NULL, summary = 'Prop test')
+```
+
 
 ## Sökt information om COVID-19
 
@@ -478,8 +501,18 @@ plot_binary_group_batch("Vaccine")
 plot_binary_batch("Soughtinfo")
 ```
 
+```{r, echo=FALSE}
+details( knitr::kable(binary_details("Soughtinfo")), 
+        lang = NULL, summary = 'Prop test')
+```
+
 ```{r mediaexp_1, fig.width=12, fig.height=9}
 plot_binary_group_batch("MediaExp")
+```
+
+```{r, echo=FALSE}
+details( knitr::kable(binary_details("MediaExp")), 
+        lang = NULL, summary = 'Prop test')
 ```
 
 ## Tilltro till information om COVID-19
@@ -558,7 +591,6 @@ details( knitr::kable(wilcox_details("Trustingroups")),
         lang = NULL, summary = 'Wilcox test')
 ```
 
-
 ## Syn på individ och samhälle
 
 ```{r cultcog_1, fig.width=12, fig.height=9}
@@ -590,6 +622,10 @@ plot_categorical_batch("COVIDexp")
 plot_binary_batch("SARS")
 ```
 
+```{r, echo=FALSE}
+details( knitr::kable(binary_details("SARS")), 
+        lang = NULL, summary = 'Prop test')
+```
 
 ```{r prep_1,  fig.width=7, fig.height=3}
 ## Prep code will come here
