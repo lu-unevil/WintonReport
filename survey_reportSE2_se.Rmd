@@ -32,6 +32,7 @@ library(hrbrthemes)
 #remotes::install_github("hadley/emo")
 library(emo)
 library(readxl)
+library(details)
 
 #dt <- read_csv("data/WintonCentreCleaned_covid_8country_labelled.csv")
 dt <- read_csv("data/WintonCentreCleaned_covid_11country_plusUK2_labelled.csv")
@@ -148,6 +149,25 @@ data_df <- df_lng_raw %>%
 ```
 
 ```{r service_functions}
+# Function to produce Wilcox pairwise test
+wilcox_details <- function(var_group_name, df_lng_rw=df_lng_raw, q_dfa=q_df){ 
+    q_var_df <- q_dfa %>% 
+    filter(var_group==var_group_name, row_id==2) %>% 
+    select(var, question)
+  
+ df_lng_rw %>% 
+  right_join(q_var_df, by="var")%>% 
+  mutate(code=ifelse(msng, NA, code),
+         code_num = parse_number(code)
+         ) %>% 
+  select(var, question, code_num, version) %>% 
+  group_by(var, question) %>% 
+  group_modify(~broom::tidy(
+    wilcox.test(code_num ~ version, data=.x, altenative="two-sided")),
+    keep = TRUE) %>% 
+   ungroup() %>% 
+   select(-var)
+}
 
 # Service function for single questions
 plot_single_batch <- function(var_name, q_dfa=q_df, lbl_dfa=lbl_df, data_dfa=data_df){
@@ -384,10 +404,20 @@ plot_binary_group_batch <- function(var_group_name, q_dfa=q_df, lbl_dfa=lbl_df, 
 plot_group_batch("COVIDeffect")
 ```
 
+```{r, echo=FALSE}
+details( knitr::kable(wilcox_details("COVIDeffect")), 
+        lang = NULL, summary = 'Wilcox test')
+```
+
 ## Uppfattning av risker med COVID-19
 
 ```{r canadaq_1, fig.width=12, fig.height=5}
 plot_group_batch("CanadaQ")
+```
+
+```{r, echo=FALSE}
+details( knitr::kable(wilcox_details("CanadaQ")), 
+        lang = NULL, summary = 'Wilcox test')
 ```
 
 ## Oro för COVID-19
@@ -396,10 +426,20 @@ plot_group_batch("CanadaQ")
 plot_group_batch("Longitude")
 ```
 
+```{r, echo=FALSE}
+details( knitr::kable(wilcox_details("Longitude")), 
+        lang = NULL, summary = 'Wilcox test')
+```
+
 ## Oro för COVID-19 jämfört med andra frågor
 
 ```{r finitepool_1, fig.width=12, fig.height=9}
 plot_group_batch("FinitePool")
+```
+
+```{r, echo=FALSE}
+details( knitr::kable(wilcox_details("FinitePool")), 
+        lang = NULL, summary = 'Wilcox test')
 ```
 
 ## Riskuppfattning av COVID-19 jämfört med andra frågor - direkta och personliga effekter
@@ -408,10 +448,21 @@ plot_group_batch("FinitePool")
 plot_group_batch("Personal")
 ```
 
+```{r, echo=FALSE}
+details( knitr::kable(wilcox_details("Personal")), 
+        lang = NULL, summary = 'Wilcox test')
+```
+
 ## Riskuppfattning av COVID-19 jämfört med andra frågor - direkta effekter på vänner och familj
 
 ```{r friends_1, fig.width=12, fig.height=9}
 plot_group_batch("Friends")
+
+```
+
+```{r, echo=FALSE}
+details( knitr::kable(wilcox_details("Friends")), 
+        lang = NULL, summary = 'Wilcox test')
 ```
 
 ## Syn på vaccin för COVID-19
@@ -437,20 +488,30 @@ plot_binary_group_batch("MediaExp")
 plot_group_batch("MediaTrust")
 ```
 
+```{r, echo=FALSE}
+details( knitr::kable(wilcox_details("MediaTrust")), 
+        lang = NULL, summary = 'Wilcox test')
+```
+
 ## Syn på vetenskaplig kunskap om COVID-19
 
 ```{r sciunderstand_1, fig.width=7, fig.height=3}
 plot_single_batch("Sciunderstand")
 ```
 
+```{r, echo=FALSE}
+details( knitr::kable(wilcox_details("Sciunderstand")), 
+        lang = NULL, summary = 'Wilcox test')
+```
+
 ```{r sciunderstand_2, fig.width=12, fig.height=3}
 plot_group_batch("KnowledgeCert")
 ```
 
-```{r prep_1,  fig.width=7, fig.height=3}
-## Prep code will come here
+```{r, echo=FALSE}
+details( knitr::kable(wilcox_details("KnowledgeCert")), 
+        lang = NULL, summary = 'Wilcox test')
 ```
-
 
 ## Syn på nationella åtgärder
 
@@ -458,10 +519,19 @@ plot_group_batch("KnowledgeCert")
 plot_group_batch("Govresponse")
 ```
 
+```{r, echo=FALSE}
+details( knitr::kable(wilcox_details("Govresponse")), 
+        lang = NULL, summary = 'Wilcox test')
+```
+
 ```{r govresponse_2, fig.width=12, fig.height=5}
 plot_group_batch("Govrestrict")
 ```
 
+```{r, echo=FALSE}
+details( knitr::kable(wilcox_details("Govrestrict")), 
+        lang = NULL, summary = 'Wilcox test')
+```
 
 ## Förtroende för individer och samhället
 
@@ -469,8 +539,39 @@ plot_group_batch("Govrestrict")
 plot_single_batch("GenSocTrust")
 ```
 
+```{r, echo=FALSE}
+details( knitr::kable(wilcox_details("GenSocTrust")), 
+        lang = NULL, summary = 'Wilcox test')
+```
+
 ```{r trust_2, fig.width=12, fig.height=12}
 plot_group_batch("Trustingroups")
+```
+
+
+```{r, echo=FALSE}
+details( knitr::kable(wilcox_details("Trustingroups")), 
+        lang = NULL, summary = 'Wilcox test')
+```
+
+## Syn på individ och samhälle
+
+```{r cultcog_1, fig.width=12, fig.height=9}
+plot_group_batch("CultCog")
+```
+
+```{r, echo=FALSE}
+details( knitr::kable(wilcox_details("CultCog")), 
+        lang = NULL, summary = 'Wilcox test')
+```
+
+```{r prosocial_1, fig.width=7, fig.height=3}
+plot_single_batch("prosocial")
+```
+
+```{r, echo=FALSE}
+details( knitr::kable(wilcox_details("prosocial")), 
+        lang = NULL, summary = 'Wilcox test')
 ```
 
 ## Erfarenheter av COVID-19 eller liknande sjukdomar
@@ -484,12 +585,6 @@ plot_binary_batch("SARS")
 ```
 
 
-## Syn på individ och samhälle
-
-```{r cultcog_1, fig.width=12, fig.height=9}
-plot_group_batch("CultCog")
-```
-
-```{r prosocial_1, fig.width=7, fig.height=3}
-plot_single_batch("prosocial")
+```{r prep_1,  fig.width=7, fig.height=3}
+## Prep code will come here
 ```
