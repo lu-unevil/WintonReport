@@ -17,11 +17,11 @@ lang <- "se"
 
 ## Introduktion
 
-Detta dokument jämför resultaten av en internationell undersökning utförd av [undersökningen av Winton Center for Risk and Evidence Communication](https://www.cam.ac.uk/stories/wintoncovid1) om riskuppfattning och syn på hantering av coronaviruset. Den svenska delen av undersökningen gjordes under perioden 28 - 29 mars 2020 och 19-24 april 2020. Vid varje omgång har 700 svar från ett representativt urval av svenska befolkningen svarat på undersökningen genom systemt Qualitrics. 
+Detta dokument jämför resultaten av en internationell undersökning utförd av [undersökningen av Winton Center for Risk and Evidence Communication](https://www.cam.ac.uk/stories/wintoncovid1) om riskuppfattning och syn på hantering av coronaviruset. Den svenska delen av undersökningen gjordes under perioden 28 - 29 mars 2020 och 19-24 april 2020. Vid varje omgång har 700 svar från ett representativt urval av svenska befolkningen svarat på undersökningen genom systemet Qualitrics. 
 
 Vi presenterar här resultaten från de två tillfällena på ett sätt som gör det möjligt att jämföra. Generellt sett är det ingen stor skillnad mellan svaren från april jämfört med mars. Just nu arbetar forskare med analys av detta material.
 
-Data är offentlig för att göra det möjligt för beslutsfattare att bilda sig en uppfattning om hur vi upplever COVID-19. Vi har gjort en liknande [översikt av publika data i samma studie från flera länder] (https://lu-unevil.github.io/WintonReport/WintonReport-en.html).
+Data är offentlig för att göra det möjligt för beslutsfattare att bilda sig en uppfattning om hur vi upplever COVID-19. Vi har gjort en liknande [översikt av publika data i samma studie från flera länder] (https://lu-unevil.github.io/WintonReport/WintonReport-se.html).
 
 Kontakt: Ullrika Sahlin, Lunds Universitet
 
