@@ -53,13 +53,13 @@ Data were collected during March and April 2020.
 
 ```
 
-## Riskperception of COVID-19 compared to other issues - direct and personal effects
+## Risk perception of COVID-19 compared to other issues - direct and personal effects
 
 ```{r personal_1, fig.width=12, fig.height=18}
 
 ```
 
-## Riskuppfattning av COVID-19 compared to other issues - direct and personal effects
+## Risk perception of COVID-19 compared to other issues - effects on friends and family
 
 ```{r friends_1, fig.width=12, fig.height=18}
 
