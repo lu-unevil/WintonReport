@@ -511,7 +511,9 @@ plot_group_batch("KnowledgeCert")
 ```{r, echo=FALSE}
 details( knitr::kable(wilcox_details("KnowledgeCert")), 
         lang = NULL, summary = 'Wilcox test')
+
 ```
+
 
 ## Syn på nationella åtgärder
 
@@ -522,6 +524,7 @@ plot_group_batch("Govresponse")
 ```{r, echo=FALSE}
 details( knitr::kable(wilcox_details("Govresponse")), 
         lang = NULL, summary = 'Wilcox test')
+
 ```
 
 ```{r govresponse_2, fig.width=12, fig.height=5}
@@ -531,7 +534,9 @@ plot_group_batch("Govrestrict")
 ```{r, echo=FALSE}
 details( knitr::kable(wilcox_details("Govrestrict")), 
         lang = NULL, summary = 'Wilcox test')
+
 ```
+
 
 ## Förtroende för individer och samhället
 
@@ -548,11 +553,11 @@ details( knitr::kable(wilcox_details("GenSocTrust")),
 plot_group_batch("Trustingroups")
 ```
 
-
 ```{r, echo=FALSE}
 details( knitr::kable(wilcox_details("Trustingroups")), 
         lang = NULL, summary = 'Wilcox test')
 ```
+
 
 ## Syn på individ och samhälle
 
@@ -572,6 +577,7 @@ plot_single_batch("prosocial")
 ```{r, echo=FALSE}
 details( knitr::kable(wilcox_details("prosocial")), 
         lang = NULL, summary = 'Wilcox test')
+
 ```
 
 ## Erfarenheter av COVID-19 eller liknande sjukdomar
@@ -588,3 +594,4 @@ plot_binary_batch("SARS")
 ```{r prep_1,  fig.width=7, fig.height=3}
 ## Prep code will come here
 ```
+
