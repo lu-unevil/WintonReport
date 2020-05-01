@@ -17,14 +17,13 @@ lang <- "se"
 
 ## Introduktion
 
-Detta dokument jämför resultaten av en internationell undersökning utförd av [undersökningen av Winton Center for Risk and Evidence Communication](https://www.cam.ac.uk/stories/wintoncovid1) om riskuppfattning och syn på hantering av coronaviruset. Den svenska delen av undersökningen gjordes under perioden 28 - 29 mars 2020 och 19-24 april 2020. Vid varje omgång har 700 svar från ett representativt urval av svenska befolkningen svarat på undersökningen genom systemet Qualitrics. 
+Detta dokument jämför resultaten av en internationell undersökning utförd av [undersökningen av Winton Center for Risk and Evidence Communication](https://www.cam.ac.uk/stories/wintoncovid1) om riskuppfattning och syn på hantering av coronaviruset. Den svenska delen av undersökningen gjordes under perioden 28-29 mars 2020 och 19-24 april 2020. Vid varje omgång har 700 svar från ett representativt urval av svenska befolkningen svarat på undersökningen genom systemet Qualitrics. 
 
 Vi presenterar här resultaten från de två tillfällena på ett sätt som gör det möjligt att jämföra. Generellt sett är det ingen stor skillnad mellan svaren från april jämfört med mars. Just nu arbetar forskare med analys av detta material.
 
-Data är offentlig för att göra det möjligt för beslutsfattare att bilda sig en uppfattning om hur vi upplever COVID-19. Vi har gjort en liknande [översikt av publika data i samma studie från flera länder] (https://lu-unevil.github.io/WintonReport/WintonReport-se.html).
+Data är offentlig för att göra det möjligt för beslutsfattare att bilda sig en uppfattning om hur vi upplever COVID-19. Vi har gjort en liknande [översikt av publika data i samma studie från flera länder](https://lu-unevil.github.io/WintonReport/WintonReport-se.html).
 
 Kontakt: Ullrika Sahlin, Lunds Universitet
-
 
 ```{r}
 library(tidyverse)
@@ -416,7 +415,11 @@ plot_binary_group_batch <- function(var_group_name, q_dfa=q_df, lbl_dfa=lbl_df, 
 ##########  END  ############
 ```
 
+Här följer en sammanställning av vad data visar.  
+
 ## Uppfattning av effekter av COVID-19
+
+Var fjärde person har upplevt ekonomiska svårigheter som ett resultat av pandemin. Andelen var något färre i april jämfört med mars. Det är lika många som har upplevt sociala svårigheter som inte har gjort det. Färre än 25% har upplevt svårigheter i sin mentala hälsa som ett resultat av pandemin. Ca 75% har inga vänner eller familj som testats positiva eller dött av viruset.
 
 ```{r covid_2, fig.width=12, fig.height=5}
 plot_group_batch("COVIDeffect")
@@ -429,6 +432,9 @@ details( knitr::kable(wilcox_details("COVIDeffect")),
 
 ## Uppfattning av risker med COVID-19
 
+De flesta anser att det kan vara allvarligt att bli sjuk av COVID-19, och att många personer kommer att påverkas. Var tredje person tror att de kommer bli sjuka med COVID-19. Vid undersökningen i april, var mer än hälften oroliga för COVID-19. Oron för COVID-19 har ökat under de senaste två månaderna, men oro för COVID-19 har minskat i april jämfört med mars.
+
+
 ```{r canadaq_1, fig.width=12, fig.height=5}
 plot_group_batch("CanadaQ")
 ```
@@ -439,6 +445,8 @@ details( knitr::kable(wilcox_details("CanadaQ")),
 ```
 
 ## Oro för COVID-19
+
+Jämfört med andra frågor, är COVID-19 det som flest är oroliga för. Näst efter COVID-19 är personer oroliga för arbetslöshet, brottslighet, klimatförändring och invandring. Oro för brottslighet har minskat i april jämfört med mars. Bland de frågor vi jämför, är det mest troligt att de blir smittade med COVID-19 och att de drabbas av ekonomiska problem. I april jämfört med mars, ser vi en minskad oro för att man som individ drabbas av ekonomiska problem
 
 ```{r longitude_1, fig.width=12, fig.height=5}
 plot_group_batch("Longitude")
@@ -485,6 +493,8 @@ details( knitr::kable(wilcox_details("Friends")),
 
 ## Syn på vaccin för COVID-19
 
+Tre utav fyra skulle rekommendera utsatta vänner och familj att bli vaccinerade, skulle ett vaccin bli tillgänglig för COVID-19, men något lägre kan tänka sig att själva låta sig bli vaccinerad.
+
 ```{r vaccine_1, fig.width=12, fig.height=3}
 plot_binary_group_batch("Vaccine")
 ```
@@ -517,6 +527,9 @@ details( knitr::kable(binary_details("MediaExp")),
 
 ## Tilltro till information om COVID-19
 
+Information om COVID-19 från WHO och officiella källor har högst förtroende, medan sociala medier och journalister har lägst förtroende. Tilltro till information om COVID-19 från journalister och media har till och med minskat i april jämfört med mars.
+
+
 ```{r mediaexp_2, fig.width=12, fig.height=9}
 plot_group_batch("MediaTrust")
 ```
@@ -527,6 +540,9 @@ details( knitr::kable(wilcox_details("MediaTrust")),
 ```
 
 ## Syn på vetenskaplig kunskap om COVID-19
+
+Aktuell kunskap om COVID-19 upplevs som varken osäker eller säker och uppskattningar av antal fall i världen anses vara mer osäkra än säkra. Jämfört med mars, uppfattar de som svarade i april, att det är en större osäkerhet i uppskattningar av antal fall av coronaviruset/COVID-19 i världen. Personer i familjen har högst förtroende, följt av läkare och sjuksköterskor och vetenskaplig kunskap. Förtroende för regeringen och politiker går isär, där många anser att de går helt och hållet att lita p medan andra anser att de inte går att lita på alls. Statstjänstemän har högre förtroende än politiker. Förtroende för främlingar och journalister ser lika ut, där en stor andel anser att de inte går att lita på alls.
+
 
 ```{r sciunderstand_1, fig.width=7, fig.height=3}
 plot_single_batch("Sciunderstand")
@@ -549,6 +565,9 @@ details( knitr::kable(wilcox_details("KnowledgeCert")),
 
 
 ## Syn på nationella åtgärder
+
+De flesta tycker de har tillräcklig information från regeringen om vad de ska göra för att minska risk för coronaviruset och känner att de förstår regeringens strategi. Även om de litar på att landets vetenskapliga och medicinska rådgivare har kännedom om de bästa åtgärderna för att möta pandemin, så tror de i en lägre grad att den offentliga strategin har varit effektiv. Förmågan hos landets politiker att hantera pandemin anses vara lägre än experter. Generellt sett känner de som svarade att landets åtgärder för att begränsa spridning spelar roll, samt de åtgärder de gör själva är viktiga även om de befintliga och planerade åtgärder inte innebär tillräckligt med begränsningar för människor. Få tycker att det är statens uppgift att skydda personer från sig själva, men ungefär hälften kan hålla med om att staten ibland behöver skapa lagar för att förhindra att personer skadar sig själva och att staten bör berätta för personer hur de ska eva sina liv.
+
 
 ```{r govresponse_1, fig.width=12, fig.height=12}
 plot_group_batch("Govresponse")
@@ -614,6 +633,8 @@ details( knitr::kable(wilcox_details("prosocial")),
 
 ## Erfarenheter av COVID-19 eller liknande sjukdomar
 
+Färre än 10% av de som svarade var eller hade varit smittad med COVID-19.
+
 ```{r covid_1, fig.width=12, fig.height=5}
 plot_categorical_batch("COVIDexp")
 ```
@@ -631,3 +652,4 @@ details( knitr::kable(binary_details("SARS")),
 ## Prep code will come here
 ```
 
+Jämförelser i svar mellan mars och april är testade med en signifikansnivå på 0.001.
