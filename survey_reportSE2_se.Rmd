@@ -415,11 +415,11 @@ plot_binary_group_batch <- function(var_group_name, q_dfa=q_df, lbl_dfa=lbl_df, 
 ##########  END  ############
 ```
 
-Här följer en sammanställning av vad data visar.  
+Här följer en sammanställning av vad data visar. Jämförelser i svar mellan mars och april är testade med en signifikansnivå på 0.001.
 
 ## Uppfattning av effekter av COVID-19
 
-Var fjärde person har upplevt ekonomiska svårigheter som ett resultat av pandemin. Andelen var något färre i april jämfört med mars. Det är lika många som har upplevt sociala svårigheter som inte har gjort det. Färre än 25% har upplevt svårigheter i sin mentala hälsa som ett resultat av pandemin. Ca 75% har inga vänner eller familj som testats positiva eller dött av viruset.
+Var fjärde person har upplevt ekonomiska svårigheter som ett resultat av pandemin. Andelen var något färre i april jämfört med mars. Det är lika många som har upplevt sociala svårigheter som inte har gjort det. Färre än 25% har upplevt svårigheter i sin mentala hälsa som ett resultat av pandemin. Tre av fyra har inga vänner eller familj som testats positiva eller dött av viruset.
 
 ```{r covid_2, fig.width=12, fig.height=5}
 plot_group_batch("COVIDeffect")
@@ -446,7 +446,7 @@ details( knitr::kable(wilcox_details("CanadaQ")),
 
 ## Oro för COVID-19
 
-Jämfört med andra frågor, är COVID-19 det som flest är oroliga för. Näst efter COVID-19 är personer oroliga för arbetslöshet, brottslighet, klimatförändring och invandring. Oro för brottslighet har minskat i april jämfört med mars. Bland de frågor vi jämför, är det mest troligt att de blir smittade med COVID-19 och att de drabbas av ekonomiska problem. I april jämfört med mars, ser vi en minskad oro för att man som individ drabbas av ekonomiska problem
+Jämfört med andra frågor, är COVID-19 det som flest är oroliga för. Näst efter COVID-19 är personer oroliga för arbetslöshet, brottslighet, klimatförändring och invandring. Oro för brottslighet har minskat i april jämfört med mars. Bland de frågor vi jämför, anser flest att det är troligt att de blir smittade med COVID-19 och att de drabbas av ekonomiska problem. I april jämfört med mars, ser vi en minskad oro för att man som individ drabbas av ekonomiska problem.
 
 ```{r longitude_1, fig.width=12, fig.height=5}
 plot_group_batch("Longitude")
@@ -493,7 +493,7 @@ details( knitr::kable(wilcox_details("Friends")),
 
 ## Syn på vaccin för COVID-19
 
-Tre utav fyra skulle rekommendera utsatta vänner och familj att bli vaccinerade, skulle ett vaccin bli tillgänglig för COVID-19, men något lägre kan tänka sig att själva låta sig bli vaccinerad.
+Tre utav fyra skulle rekommendera utsatta vänner och familj att bli vaccinerade, men en något lägre andel kan tänka sig att själva vaccinera sig.
 
 ```{r vaccine_1, fig.width=12, fig.height=3}
 plot_binary_group_batch("Vaccine")
@@ -541,7 +541,7 @@ details( knitr::kable(wilcox_details("MediaTrust")),
 
 ## Syn på vetenskaplig kunskap om COVID-19
 
-Aktuell kunskap om COVID-19 upplevs som varken osäker eller säker och uppskattningar av antal fall i världen anses vara mer osäkra än säkra. Jämfört med mars, uppfattar de som svarade i april, att det är en större osäkerhet i uppskattningar av antal fall av coronaviruset/COVID-19 i världen. Personer i familjen har högst förtroende, följt av läkare och sjuksköterskor och vetenskaplig kunskap. Förtroende för regeringen och politiker går isär, där många anser att de går helt och hållet att lita p medan andra anser att de inte går att lita på alls. Statstjänstemän har högre förtroende än politiker. Förtroende för främlingar och journalister ser lika ut, där en stor andel anser att de inte går att lita på alls.
+Aktuell kunskap om COVID-19 upplevs som varken osäker eller säker och uppskattningar av antal fall i världen anses vara mer osäkra än säkra. Jämfört med mars, uppfattar de som svarade i april, att det är en större osäkerhet i uppskattningar av antal fall av coronaviruset/COVID-19 i världen. Personer i familjen har högst förtroende, följt av läkare och sjuksköterskor och vetenskaplig kunskap. Förtroende för regeringen och politiker går isär, där många anser att de går helt och hållet att lita på medan andra anser att de inte går att lita på alls. Statstjänstemän har högre förtroende än politiker. En stor andel av de som svarade anser att de inte litar på främlingar eller journalister.
 
 
 ```{r sciunderstand_1, fig.width=7, fig.height=3}
@@ -566,7 +566,7 @@ details( knitr::kable(wilcox_details("KnowledgeCert")),
 
 ## Syn på nationella åtgärder
 
-De flesta tycker de har tillräcklig information från regeringen om vad de ska göra för att minska risk för coronaviruset och känner att de förstår regeringens strategi. Även om de litar på att landets vetenskapliga och medicinska rådgivare har kännedom om de bästa åtgärderna för att möta pandemin, så tror de i en lägre grad att den offentliga strategin har varit effektiv. Förmågan hos landets politiker att hantera pandemin anses vara lägre än experter. Generellt sett känner de som svarade att landets åtgärder för att begränsa spridning spelar roll, samt de åtgärder de gör själva är viktiga även om de befintliga och planerade åtgärder inte innebär tillräckligt med begränsningar för människor. Få tycker att det är statens uppgift att skydda personer från sig själva, men ungefär hälften kan hålla med om att staten ibland behöver skapa lagar för att förhindra att personer skadar sig själva och att staten bör berätta för personer hur de ska eva sina liv.
+De flesta tycker de har tillräcklig information från regeringen om vad de ska göra för att minska risk för coronaviruset och känner att de förstår regeringens strategi. Även om de litar på att landets vetenskapliga och medicinska rådgivare har kännedom om de bästa åtgärderna för att möta pandemin, så tror de i en lägre grad att den offentliga strategin har varit effektiv. Förmågan hos landets politiker att hantera pandemin anses vara lägre än experter. Generellt sett känner de som svarade att landets åtgärder för att begränsa spridning spelar roll, samt de åtgärder de gör själva är viktiga även om de befintliga och planerade åtgärder inte innebär tillräckligt med begränsningar för människor. Få tycker att det är statens uppgift att skydda personer från sig själva, men ungefär hälften kan hålla med om att staten ibland behöver skapa lagar för att förhindra att personer skadar sig själva och att staten bör berätta för personer hur de ska leva sina liv.
 
 
 ```{r govresponse_1, fig.width=12, fig.height=12}
@@ -652,4 +652,4 @@ details( knitr::kable(binary_details("SARS")),
 ## Prep code will come here
 ```
 
-Jämförelser i svar mellan mars och april är testade med en signifikansnivå på 0.001.
+
