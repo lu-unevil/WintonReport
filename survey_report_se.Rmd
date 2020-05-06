@@ -17,7 +17,7 @@ knitr::read_chunk('survey_chunks.R')
 
 ## Introduktion
 
-Detta dokument jämför resultaten av en internationell undersökning utförd av [undersökningen av Winton Center for Risk and Evidence Communication](https://www.cam.ac.uk/stories/wintoncovid1) om riskuppfattning och syn på hantering av coronaviruset. Data samlades in under mars och april 2020, med en eller två omgångar i varje land. Vid varje omgång har 700 svar från ett representativt urval av svenska befolkningen svarat på undersökningen genom systemt Qualitrics. 
+Detta dokument jämför resultaten av en internationell undersökning utförd av [undersökningen av Winton Center for Risk and Evidence Communication](https://www.cam.ac.uk/stories/wintoncovid1) om riskuppfattning och syn på hantering av coronaviruset (se artikel i [Journal of Risk Research publicerad den 5 maj 2020](https://doi.org/10.1080/13669877.2020.1758193)). Data samlades in under mars och april 2020, med en eller två omgångar i varje land. Vid varje omgång har 700 svar från ett representativt urval av svenska befolkningen svarat på undersökningen genom systemt Qualitrics. 
 
 Vi presenterar här resultaten för varje land på ett sätt som gör det möjligt att jämföra. Just nu arbetar forskare med analys av detta material. 
 

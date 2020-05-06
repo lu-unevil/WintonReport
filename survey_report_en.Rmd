@@ -17,9 +17,10 @@ knitr::read_chunk('survey_chunks.R')
 
 ## Introduction
 
-This document visualizes results of the international [survey by Winton Centre for Risk and Evidence Communication](https://www.cam.ac.uk/stories/wintoncovid1) about people's attitudes towards the risk of coronavirus, and their governments’ reactions.
+This document visualizes results of the international [survey by Winton Centre for Risk and Evidence Communication](https://www.cam.ac.uk/stories/wintoncovid1) about people's attitudes towards the risk of coronavirus, and their governments’ reactions (see article in the [Journal of Risk Research published on 05 May 2020](https://doi.org/10.1080/13669877.2020.1758193)).
 
 Data were collected during March and April 2020. 
+
 ```{r prepare_data}
 
 ```
