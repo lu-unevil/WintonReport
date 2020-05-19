@@ -17,14 +17,14 @@ df <- read_csv("data/df_long_raw.csv") %>%
 rescaled_df <- df %>% 
   filter(!is.na(code)) %>% 
   left_join(max_lbls, by="var") %>% 
-  mutate(scaled_code=(code-1)/(max_code-1),
-         rescaled_code7=scaled_code*6+1) %>% 
+  # The rescaling from 1-5 to 1-7 is done using 1.5*(old value) - 0.5
+  mutate(scaled_code=ifelse(max_code==5, 1.5*code-0.5, code)) %>% 
   group_by(rowid, Residency) %>% 
-  summarise(mean_code = mean(rescaled_code7))
+  summarise(mean_code = mean(scaled_code))
 
 ggplot(rescaled_df)+
   geom_density(aes(x=mean_code))+
-  facet_wrap(vars(Residency))
+  facet_wrap(vars(Residency), ncol=2)
 
 
 
