@@ -29,4 +29,6 @@ ggplot(rescaled_df)+
 
 
 
+ggplot(rescaled_df)+
+  geom_density(aes(x=mean_code, fill = Residency),alpha=0.4)
 
