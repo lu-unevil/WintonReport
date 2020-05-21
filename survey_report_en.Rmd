@@ -7,6 +7,7 @@ output:
     theme: paper
     toc: yes
     toc_float: yes
+bibliography: bibliography.bib
 ---
 
 ```{r setup, include=FALSE}
@@ -17,7 +18,7 @@ knitr::read_chunk('survey_chunks.R')
 
 ## Introduction
 
-This document visualizes results of the international [survey by Winton Centre for Risk and Evidence Communication](https://www.cam.ac.uk/stories/wintoncovid1) about people's attitudes towards the risk of coronavirus, and their governments’ reactions (see article in the [Journal of Risk Research published on 05 May 2020](https://doi.org/10.1080/13669877.2020.1758193)).
+This document visualizes results of the international [survey by Winton Centre for Risk and Evidence Communication](https://www.cam.ac.uk/stories/wintoncovid1) about people's attitudes towards the risk of coronavirus, and their governments’ reactions. For details see article [published in the Journal of Risk Research on 05 May 2020](https://doi.org/10.1080/13669877.2020.1758193) [@dryhurst2020].
 
 Data were collected during March and April 2020. 
 
@@ -141,3 +142,21 @@ Data were collected during March and April 2020.
 
 ```
 
+## Risk perception index 
+
+As shown in [@dryhurst2020], risk perception can be aggregated into an index, which combines answers to the following questions
+
+```{r idx_var_1}
+
+```
+<br>
+Rescaling of questions on 1..5 scale is done with $NewScore = OldScore * 1.5 - 0.5$. One of the question is stated with negation (i.e. "will NOT affect"), so the answers need to be inverted with $max(OldScore)+1-OldScore$. Once the scores are rescaled they can be averaged across the answers to the questions in the table above. 
+
+Now we can compare distribution of Risk index by country.
+
+```{r idx_var_2, fig.width=7, fig.height=6}
+
+```
+
+
+## References

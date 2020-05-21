@@ -7,6 +7,7 @@ output:
     theme: paper
     toc: yes
     toc_float: yes
+bibliography: bibliography.bib
 ---
 
 ```{r setup, include=FALSE}
@@ -17,7 +18,7 @@ knitr::read_chunk('survey_chunks.R')
 
 ## Introduktion
 
-Detta dokument jämför resultaten av en internationell undersökning utförd av [undersökningen av Winton Center for Risk and Evidence Communication](https://www.cam.ac.uk/stories/wintoncovid1) om riskuppfattning och syn på hantering av coronaviruset (se artikel i [Journal of Risk Research publicerad den 5 maj 2020](https://doi.org/10.1080/13669877.2020.1758193)). Data samlades in under mars och april 2020, med en eller två omgångar i varje land. Vid varje omgång har 700 svar från ett representativt urval av svenska befolkningen svarat på undersökningen genom systemt Qualitrics. 
+Detta dokument jämför resultaten av en internationell undersökning utförd av [undersökningen av Winton Center for Risk and Evidence Communication](https://www.cam.ac.uk/stories/wintoncovid1) om riskuppfattning och syn på hantering av coronaviruset (se artikel i [Journal of Risk Research publicerad den 5 maj 2020](https://doi.org/10.1080/13669877.2020.1758193)) [@dryhurst2020]. Data samlades in under mars och april 2020, med en eller två omgångar i varje land. Vid varje omgång har 700 svar från ett representativt urval av svenska befolkningen svarat på undersökningen genom systemt Qualitrics. 
 
 Vi presenterar här resultaten för varje land på ett sätt som gör det möjligt att jämföra. Just nu arbetar forskare med analys av detta material. 
 
@@ -149,8 +150,23 @@ Kontakt: Ullrika Sahlin, Lunds Universitet
 
 ```
 
+## Riskuppfattningsindex
 
+Som visas i [@dryhurst2020] kan riskuppfattning sammanföras till ett index, som kombinerar svar på följande frågor
 
+```{r idx_var_1}
+
+```
+<br>
+Omskalning av frågor på skalan 1..5 görs med $NewScore = OldScore * 1,5 - 0,5$. En av frågorna anges med negation (dvs "kommer INTE att påverka"), så svaren måste inverteras med $max (OldScore) + 1-OldScore$. När poängen har räknats om kan de beräknas i genomsnitt över svaren på frågorna i tabellen ovan.
+
+Nu kan vi jämföra fördelningen av riskindex per land.
+
+```{r idx_var_2, fig.width=7, fig.height=6}
+
+```
+
+## Referenser
 
 
 

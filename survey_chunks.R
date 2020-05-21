@@ -2,8 +2,10 @@
 ########## BEGIN ############
 library(tidyverse)
 library(hrbrthemes)
+library(tidybayes)
 #remotes::install_github("hadley/emo")
 library(emo)
+library(gt)
 
 #dt <- read_csv("data/WintonCentreCleaned_covid_8country_labelled.csv")
 dt <- read_csv("data/WintonCentreCleaned_covid_11country_plusUK2_labelled.csv")
@@ -450,4 +452,93 @@ plot_group("KnowledgeCert")
 ## @knitr vaccine_1
 ########## BEGIN ###########
 plot_binary_group("Vaccine")
+##########  END  ###########
+
+## @knitr idx_var_1
+########## BEGIN ###########
+idx_vars <- c("FinitePool_2", "Personal_8", "Friends_8", "CanadaQ_3", "CanadaQ_2", "CanadaQ_1")
+
+max_lbls <- lbl_df %>% 
+  filter(var %in% idx_vars) %>% 
+  arrange(var, code) %>% 
+  mutate(code_label=paste(label, "(", code, ")", sep="")) %>% 
+  group_by(var) %>% 
+  summarise(
+    codelabel_range=paste(code_label, collapse=".."),
+    max_code=max(code))
+
+var_grps <- q_df %>% 
+  filter(var %in% idx_vars) %>% 
+  distinct(var_group)
+
+qs1 <- q_df %>% 
+  semi_join(var_grps, by="var_group") %>% 
+  filter(row_id==0) %>% 
+  select(var_group, question1=question)
+
+qs <- q_df %>% 
+  filter(var %in% idx_vars, row_id==2) %>%
+  left_join(qs1, by="var_group")
+
+r_idx_df <- df_lng_raw %>% 
+  semi_join(qs, by="var") %>% 
+  filter(!is.na(code)) %>% 
+  mutate(code=parse_number(code)) %>% 
+  left_join(max_lbls, by="var") %>% 
+  mutate(rev_code=ifelse(var=="CanadaQ_3", 6-code, code),
+         scaled_code=ifelse(max_code==5, 1.5*rev_code-0.5, rev_code)) %>% 
+  group_by(rowid, Residency) %>% 
+  summarise(mean_code = mean(scaled_code)) %>% 
+  left_join(country_df, by="Residency")
+
+tbl_hdr_df <- tibble::tribble(~language, ~var, ~txt,
+                              "se", "question_all", "Fråga",
+                              "se", "codelabel_range", "Val",
+                              "en", "question_all", "Question",
+                              "en", "codelabel_range", "Choices") %>% 
+  filter(language==lang)
+
+qs %>% 
+  left_join(max_lbls, by="var") %>% 
+  mutate(question_all=paste("<em>",question1,"</em><br>", question, sep ="")) %>% 
+  select(question_all, codelabel_range) %>% 
+  gt() %>% 
+  fmt_markdown(vars(question_all)) %>% 
+  cols_label(question_all=with(tbl_hdr_df, txt[var=="question_all"]),
+             codelabel_range=with(tbl_hdr_df, txt[var=="codelabel_range"])) %>% 
+  tab_options(column_labels.background.color = "#666666",
+              column_labels.font.weight = "bold",
+              table.font.size = pct(80),
+              data_row.padding = px(3),
+              table.width = pct(100)
+              )
+##########  END  ###########
+
+## @knitr idx_var_2
+########## BEGIN ###########
+
+idx_plt_df <- tibble::tribble(~language, ~item, ~txt,
+                              "en", "title", "Risk Perception Index distribution by country",
+                              "en", "x", "Risk Perception Index (pdf)",
+                              "se", "title", "Riskuppfattningsindexfördelning per land",
+                              "se", "x", "Riskuppfattningsindexfördelning (pdf)") %>% 
+  filter(language==lang)
+
+r_idx_df %>% 
+  ggplot()+
+  stat_halfeyeh(aes(x=mean_code, 
+                    y=fct_reorder(countryflag, mean_code)))+
+  scale_x_continuous(limits = c(1,7), expand = c(0,0))+
+  labs(title=with(idx_plt_df, txt[item=="title"]),
+       x=with(idx_plt_df, txt[item=="x"]), 
+       y=NULL)+
+  theme_ipsum_rc(grid=FALSE)+
+  theme(panel.grid.minor = element_blank(),
+        panel.grid.major = element_blank(),
+        axis.line.y = element_blank(),
+        axis.ticks = element_blank(),
+        axis.text.y = element_text(size=16),
+        plot.title = element_text(lineheight = 1.1, face="bold"),
+        strip.text = element_text(size=12),
+        legend.position = 'none')
 ##########  END  ###########
