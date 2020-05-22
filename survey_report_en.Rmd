@@ -150,7 +150,7 @@ As shown in [@dryhurst2020], risk perception can be aggregated into an index, wh
 
 ```
 <br>
-Rescaling of questions on 1..5 scale is done with $NewScore = OldScore * 1.5 - 0.5$. One of the question is stated with negation (i.e. "will NOT affect"), so the answers need to be inverted with $max(OldScore)+1-OldScore$. Once the scores are rescaled they can be averaged across the answers to the questions in the table above. 
+Rescaling of questions on 1..5 scale is done with $NewScore = OldScore * 1.5 - 0.5$. One of the question is stated with negation (i.e. "will NOT affect"), so the answers need to be inverted. Once the scores are rescaled they can be averaged across the answers to the questions in the table above. 
 
 Now we can compare distribution of Risk index by country.
 

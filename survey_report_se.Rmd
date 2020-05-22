@@ -152,13 +152,13 @@ Kontakt: Ullrika Sahlin, Lunds Universitet
 
 ## Riskuppfattningsindex
 
-Som visas i [@dryhurst2020] kan riskuppfattning sammanföras till ett index, som kombinerar svar på följande frågor
+För att få en bra beskrivning av riskuppfattning kan man som i [@dryhurst2020] sammanföra flera frågor på riskuppfattning till ett index. De kombinerade svar på följande frågor
 
 ```{r idx_var_1}
 
 ```
 <br>
-Omskalning av frågor på skalan 1..5 görs med $NewScore = OldScore * 1,5 - 0,5$. En av frågorna anges med negation (dvs "kommer INTE att påverka"), så svaren måste inverteras med $max (OldScore) + 1-OldScore$. När poängen har räknats om kan de beräknas i genomsnitt över svaren på frågorna i tabellen ovan.
+Index för riskuppfattning är ett medelvärde av frågorna i tabellen. Frågor vars svar ges på skalan 1..5 har omräknats $nyttvärde = gammaltvärde * 1,5 - 0,5$. För frågan som anges med negation (dvs "kommer INTE att påverka") har svaren inverteras. 
 
 Nu kan vi jämföra fördelningen av riskindex per land.
 
