@@ -518,10 +518,10 @@ qs %>%
 ########## BEGIN ###########
 
 idx_plt_df <- tibble::tribble(~language, ~item, ~txt,
-                              "en", "title", "Risk Perception Index distribution by country",
-                              "en", "x", "Risk Perception Index (pdf)",
-                              "se", "title", "Riskuppfattningsindexfördelning per land",
-                              "se", "x", "Riskuppfattningsindexfördelning (pdf)") %>% 
+                              "en", "title", "Risk Perception Index by country",
+                              "en", "x", "Risk Perception Index (distribution)",
+                              "se", "title", "Riskuppfattningsindex per land",
+                              "se", "x", "Riskuppfattningsindex (fördelning)") %>% 
   filter(language==lang)
 
 r_idx_df %>% 
